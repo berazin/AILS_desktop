@@ -1,0 +1,43 @@
+.ails-processbar-texture [data-processbar-selection-surface] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.ails-processbar-texture [data-processbar-selection-surface][hidden] { display: none; }
+
+.ails-processbar-texture [data-processbar-selection-surface] > svg {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  overflow: visible;
+  fill: var(--processbar-active-background);
+}
+
+.ails-processbar-texture [data-processbar-selection-ready] :is([data-tab-id], [data-split-tab-group]) {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none;
+  z-index: 1;
+  transition: color 280ms ease;
+}
+
+.ails-processbar-texture [data-processbar-selection-ready] [data-tab-id] :is(span, svg, svg *) {
+  transition: color 280ms ease;
+}
+
+.ails-processbar-texture [data-processbar-selection-ready] [data-ails-processbar-tab][data-active="true"]::before,
+.ails-processbar-texture [data-processbar-selection-ready] [data-ails-processbar-tab][data-active="true"]::after {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ails-processbar-texture [data-processbar-selection-ready] :is([data-tab-id], [data-split-tab-group]),
+  .ails-processbar-texture [data-processbar-selection-ready] [data-tab-id] :is(span, svg, svg *) {
+    transition: none;
+  }
+}

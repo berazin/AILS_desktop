@@ -1,0 +1,599 @@
+{
+  "background-work": {
+    "hooks/use-backend-work-status.ts": {
+      "types": [
+        "useBackendWorkStatus"
+      ],
+      "values": []
+    },
+    "hooks/use-task-operations.ts": {
+      "types": [
+        "useTaskOperations"
+      ],
+      "values": []
+    }
+  },
+  "chat": {
+    "components/chat-composer-controls.tsx": {
+      "types": [],
+      "values": [
+        "ChatComposerControls"
+      ]
+    },
+    "components/chat-workspace-view.tsx": {
+      "types": [],
+      "values": [
+        "ChatWorkspaceView"
+      ]
+    },
+    "components/chatgpt-plan-indicator.tsx": {
+      "types": [],
+      "values": [
+        "ChatGPTPlanIndicatorForConfig"
+      ]
+    },
+    "hooks/use-answer-evidence-navigation.ts": {
+      "types": [
+        "ReadingLocation"
+      ],
+      "values": []
+    },
+    "hooks/use-chat-controller.ts": {
+      "types": [
+        "ChatController",
+        "ChatMessage"
+      ],
+      "values": []
+    },
+    "lib/evidence-navigation-context.ts": {
+      "types": [],
+      "values": [
+        "EvidenceNavigationContext"
+      ]
+    },
+    "types/chat-workspace.ts": {
+      "types": [
+        "ChatVoiceWorkspace"
+      ],
+      "values": []
+    }
+  },
+  "code-sandbox": {
+    "code-sandbox-window-geometry.ts": {
+      "types": [],
+      "values": [
+        "codeSandboxResizeCursor"
+      ]
+    },
+    "components/code-sandbox-workspace-overlay.tsx": {
+      "types": [
+        "CodeSandboxWorkspaceOverlay"
+      ],
+      "values": []
+    },
+    "components/practice-feedback-panels.tsx": {
+      "types": [],
+      "values": [
+        "PracticeFeedbackPanel",
+        "PracticeHintPanel"
+      ]
+    },
+    "components/practice-multiple-choice.tsx": {
+      "types": [],
+      "values": [
+        "PracticeMultipleChoice"
+      ]
+    },
+    "components/practice-navigation-fold.tsx": {
+      "types": [],
+      "values": [
+        "PracticeNavigationFoldButton",
+        "PracticeNavigationRail"
+      ]
+    },
+    "components/practice-question-copy-button.tsx": {
+      "types": [],
+      "values": [
+        "PracticeQuestionCopyButton"
+      ]
+    },
+    "components/practice-retry-controls.tsx": {
+      "types": [],
+      "values": [
+        "PracticeRetryControls"
+      ]
+    },
+    "components/practice-round-history.tsx": {
+      "types": [],
+      "values": [
+        "PracticeRoundHistory"
+      ]
+    },
+    "components/practice-study-view.tsx": {
+      "types": [],
+      "values": [
+        "PracticeNavigatorQuestionRow",
+        "PracticeStepButton",
+        "PracticeStudyToolbar"
+      ]
+    },
+    "components/practice-window-header.tsx": {
+      "types": [],
+      "values": [
+        "PracticeWindowHeader"
+      ]
+    },
+    "hooks/use-code-sandbox-window-chrome.ts": {
+      "types": [],
+      "values": [
+        "useCodeSandboxWindowChrome"
+      ]
+    },
+    "hooks/use-code-sandbox-workspace.ts": {
+      "types": [
+        "CodeSandboxWorkspace",
+        "useCodeSandboxWorkspace"
+      ],
+      "values": []
+    },
+    "hooks/use-interaction-runner.ts": {
+      "types": [
+        "InteractionRunner"
+      ],
+      "values": []
+    },
+    "hooks/use-practice-navigation-fold.ts": {
+      "types": [],
+      "values": [
+        "usePracticeNavigationFold"
+      ]
+    },
+    "hooks/use-practice-navigation.ts": {
+      "types": [],
+      "values": [
+        "usePracticeNavigation"
+      ]
+    },
+    "hooks/use-practice-pdf-files.ts": {
+      "types": [
+        "PracticePdfFileNavigation"
+      ],
+      "values": []
+    },
+    "hooks/use-practice-retry-session.ts": {
+      "types": [],
+      "values": [
+        "usePracticeRetrySession"
+      ]
+    },
+    "lib/code-sandbox-support.ts": {
+      "types": [
+        "SandboxFile"
+      ],
+      "values": []
+    },
+    "workspaces/api.ts": {
+      "types": [],
+      "values": [
+        "listWorkspaces"
+      ]
+    },
+    "workspaces/folder-editor-transfer.ts": {
+      "types": [],
+      "values": [
+        "collectFolderEditorTransfers",
+        "folderEditorTransfersUnchanged",
+        "releaseFolderEditorTransfers",
+        "restoreFolderEditorTransfers"
+      ]
+    },
+    "workspaces/folder-workbench-layout.tsx": {
+      "types": [
+        "WorkbenchLayoutModel"
+      ],
+      "values": [
+        "FolderWorkbenchLayout"
+      ]
+    },
+    "workspaces/session.ts": {
+      "types": [],
+      "values": [
+        "CODE_START_ID",
+        "SPLIT_PICKER_ID",
+        "folderId"
+      ]
+    },
+    "workspaces/use-folder-workbench.ts": {
+      "types": [
+        "FolderWorkbench"
+      ],
+      "values": []
+    }
+  },
+  "desktop-shell": {
+    "hooks/use-debug-trace-workflow.ts": {
+      "types": [
+        "DebugTraceWorkflow"
+      ],
+      "values": []
+    },
+    "lib/external-document-startup.ts": {
+      "types": [],
+      "values": [
+        "hasInitialExternalDocument",
+        "waitForInitialExternalDocument"
+      ]
+    }
+  },
+  "document": {
+    "components/cached-tab-views.tsx": {
+      "types": [],
+      "values": [
+        "CachedTabViews"
+      ]
+    },
+    "components/document-header-actions.tsx": {
+      "types": [
+        "DocumentHeaderActionsProps"
+      ],
+      "values": [
+        "DocumentHeaderActions"
+      ]
+    },
+    "components/document-loading-placeholder.tsx": {
+      "types": [],
+      "values": [
+        "DocumentLoadingPlaceholder"
+      ]
+    },
+    "components/document-viewer-content.tsx": {
+      "types": [],
+      "values": [
+        "DocumentViewerContent"
+      ]
+    },
+    "components/document-windows.tsx": {
+      "types": [],
+      "values": [
+        "FloatingChatbotWindow",
+        "LinkedMarkdownWindow"
+      ]
+    },
+    "components/markdown-document-surface.tsx": {
+      "types": [],
+      "values": [
+        "MarkdownDocumentSurface"
+      ]
+    },
+    "hooks/use-document-scroll-restoration.ts": {
+      "types": [],
+      "values": [
+        "useDocumentScrollRestoration"
+      ]
+    },
+    "hooks/use-document-workspace.ts": {
+      "types": [
+        "DocumentWorkspace"
+      ],
+      "values": []
+    },
+    "hooks/use-markdown-margin-navigation.ts": {
+      "types": [],
+      "values": [
+        "useMarkdownMarginNavigation"
+      ]
+    },
+    "hooks/use-viewer-editing-workflow.ts": {
+      "types": [
+        "ViewerMarkdownEditorModel"
+      ],
+      "values": [
+        "useViewerEditingWorkflow"
+      ]
+    }
+  },
+  "insight-book": {
+    "insight-book-launcher.tsx": {
+      "types": [],
+      "values": [
+        "InsightBookLauncher"
+      ]
+    }
+  },
+  "materials": {
+    "components/material-document-dialogs.tsx": {
+      "types": [],
+      "values": [
+        "MaterialDocumentDialogs"
+      ]
+    },
+    "components/material-practice-dialog.tsx": {
+      "types": [],
+      "values": [
+        "MaterialPracticeDialog"
+      ]
+    },
+    "components/material-practice-solver.tsx": {
+      "types": [],
+      "values": [
+        "*"
+      ]
+    },
+    "components/material-search-inline.tsx": {
+      "types": [],
+      "values": [
+        "MaterialSearchInline"
+      ]
+    },
+    "components/materials-overlays.tsx": {
+      "types": [],
+      "values": [
+        "MaterialsOverlays"
+      ]
+    },
+    "components/summary-generation-dialog.tsx": {
+      "types": [],
+      "values": [
+        "SummaryGenerationDialog"
+      ]
+    },
+    "hooks/use-material-document-workflows.ts": {
+      "types": [],
+      "values": [
+        "useMaterialDocumentWorkflows"
+      ]
+    },
+    "hooks/use-material-practice-workflow.ts": {
+      "types": [],
+      "values": [
+        "useMaterialPracticeWorkflow"
+      ]
+    },
+    "hooks/use-material-search-modal.ts": {
+      "types": [
+        "MaterialSearchModalController",
+        "OpenMaterialSearchResult"
+      ],
+      "values": [
+        "useMaterialSearchModal"
+      ]
+    },
+    "hooks/use-materials-controller.ts": {
+      "types": [
+        "MaterialBulkDeleteTarget",
+        "MaterialsController"
+      ],
+      "values": []
+    },
+    "hooks/use-materials-workflows.ts": {
+      "types": [
+        "MaterialsWorkflows"
+      ],
+      "values": [
+        "useMaterialsWorkflows"
+      ]
+    },
+    "hooks/use-summary-generation-workflow.ts": {
+      "types": [
+        "useSummaryGenerationWorkflow"
+      ],
+      "values": []
+    },
+    "hooks/use-visible-material-directory.ts": {
+      "types": [],
+      "values": [
+        "useVisibleMaterialDirectory"
+      ]
+    },
+    "hooks/use-workspace-entry-creation.ts": {
+      "types": [
+        "CreatedWorkspaceEntry",
+        "WorkspaceEntryKind"
+      ],
+      "values": [
+        "useWorkspaceEntryCreation"
+      ]
+    }
+  },
+  "notebook": {
+    "components/lazy-notebook-workspace.tsx": {
+      "types": [],
+      "values": [
+        "NotebookWorkspace"
+      ]
+    },
+    "hooks/use-notebook-controller.ts": {
+      "types": [
+        "NotebookController"
+      ],
+      "values": []
+    }
+  },
+  "office": {
+    "html-preview-panel.tsx": {
+      "types": [],
+      "values": [
+        "HtmlPreviewPanel"
+      ]
+    },
+    "lazy-office-workspace.tsx": {
+      "types": [],
+      "values": [
+        "OfficeWorkspace"
+      ]
+    },
+    "session.ts": {
+      "types": [],
+      "values": [
+        "canCloseOffice",
+        "getOfficeSession",
+        "officeTitle",
+        "useOfficeRevision"
+      ]
+    },
+    "types.ts": {
+      "types": [],
+      "values": [
+        "OFFICE_KINDS"
+      ]
+    }
+  },
+  "pdf": {
+    "components/pdf-annotation-palette.tsx": {
+      "types": [],
+      "values": [
+        "PdfAnnotationPalette"
+      ]
+    },
+    "components/pdf-js-page.tsx": {
+      "types": [],
+      "values": [
+        "PdfJsPage"
+      ]
+    },
+    "components/pdf-password-dialog.tsx": {
+      "types": [],
+      "values": [
+        "PdfPasswordDialog"
+      ]
+    },
+    "components/pdf-thumbnail.ts": {
+      "types": [],
+      "values": [
+        "coverAspectCache",
+        "getPdfThumbnailUrl"
+      ]
+    },
+    "components/pdf-view-settings.tsx": {
+      "types": [],
+      "values": [
+        "PdfViewSettings"
+      ]
+    },
+    "components/pdf-workspace-viewer.tsx": {
+      "types": [
+        "PdfWorkspaceViewer"
+      ],
+      "values": []
+    },
+    "hooks/use-pdf-controller.ts": {
+      "types": [
+        "PdfController"
+      ],
+      "values": []
+    },
+    "hooks/use-pdf-core-workspace.ts": {
+      "types": [
+        "PdfCoreWorkspace"
+      ],
+      "values": []
+    },
+    "hooks/use-pdf-floating-window.ts": {
+      "types": [
+        "PdfFloatingWindow"
+      ],
+      "values": []
+    },
+    "hooks/use-pdf-viewer-workspace.ts": {
+      "types": [
+        "PdfViewerWorkspace"
+      ],
+      "values": []
+    },
+    "hooks/use-pdf-workspace-domain.ts": {
+      "types": [
+        "PdfWorkspaceDomain"
+      ],
+      "values": []
+    },
+    "lib/pdf-page-state.ts": {
+      "types": [],
+      "values": [
+        "readSavedPdfPages",
+        "savePdfPageForPath"
+      ]
+    },
+    "lib/quick-chat-edit-context-types.ts": {
+      "types": [],
+      "values": [
+        "questionReaderTarget",
+        "questionTextEntry"
+      ]
+    }
+  },
+  "practice-grading": {
+    "components/practice-grading-context.tsx": {
+      "types": [],
+      "values": [
+        "PracticeGradingContext"
+      ]
+    }
+  },
+  "practice-tutor": {
+    "components/practice-tutor-entry.tsx": {
+      "types": [],
+      "values": [
+        "PracticeTutorEntry"
+      ]
+    },
+    "hooks/use-material-practice-tutor.ts": {
+      "types": [],
+      "values": [
+        "useMaterialPracticeTutor"
+      ]
+    },
+    "hooks/use-pdf-practice-tutor.ts": {
+      "types": [],
+      "values": [
+        "usePdfPracticeTutor"
+      ]
+    },
+    "hooks/use-practice-tutor-workspace.ts": {
+      "types": [
+        "PracticeTutorWorkspace"
+      ],
+      "values": []
+    },
+    "lib/practice-tutor-layout.ts": {
+      "types": [],
+      "values": [
+        "practiceTutorLayout"
+      ]
+    },
+    "practice-tutor-provider.tsx": {
+      "types": [],
+      "values": [
+        "usePracticeTutor"
+      ]
+    }
+  },
+  "settings": {
+    "hooks/use-settings-controller.ts": {
+      "types": [
+        "SettingsController"
+      ],
+      "values": []
+    }
+  },
+  "voice": {
+    "components/mic-test-panel.tsx": {
+      "types": [],
+      "values": [
+        "MicTestPanel"
+      ]
+    },
+    "hooks/use-voice-controller.ts": {
+      "types": [
+        "VoiceController",
+        "VoiceInputState"
+      ],
+      "values": []
+    },
+    "hooks/use-voice-session-workflows.ts": {
+      "types": [
+        "useVoiceSessionWorkflows"
+      ],
+      "values": []
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "model_id": "ppstructure-v3-korean-onnx",
+  "version": "1.0.0",
+  "purpose": "PP-StructureV3 document analysis: PP-DocLayoutV2 layout, PP-OCRv5_server_det detection, korean_PP-OCRv5_mobile_rec recognition, table recognition, region detection",
+  "license": "Apache-2.0",
+  "file_size": 1085971170,
+  "download_urls": [
+    "https://huggingface.co/PaddlePaddle/PP-DocLayoutV2_onnx",
+    "https://huggingface.co/PaddlePaddle/PP-DocBlockLayout_onnx",
+    "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det_onnx",
+    "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx",
+    "https://huggingface.co/PaddlePaddle/PP-LCNet_x1_0_table_cls_onnx",
+    "https://huggingface.co/PaddlePaddle/SLANeXt_wired_onnx",
+    "https://huggingface.co/PaddlePaddle/SLANet_plus_onnx",
+    "https://huggingface.co/PaddlePaddle/RT-DETR-L_wired_table_cell_det_onnx",
+    "https://huggingface.co/PaddlePaddle/RT-DETR-L_wireless_table_cell_det_onnx"
+  ],
+  "required_files": [
+    "layout/inference.onnx",
+    "layout/inference.yml",
+    "region/inference.onnx",
+    "region/inference.yml",
+    "detector/inference.onnx",
+    "detector/inference.yml",
+    "recognizer/inference.onnx",
+    "recognizer/inference.yml",
+    "table_classifier/inference.onnx",
+    "table_classifier/inference.yml",
+    "wired_table_structure/inference.onnx",
+    "wired_table_structure/inference.yml",
+    "wireless_table_structure/inference.onnx",
+    "wireless_table_structure/inference.yml",
+    "wired_table_cells/inference.onnx",
+    "wired_table_cells/inference.yml",
+    "wireless_table_cells/inference.onnx",
+    "wireless_table_cells/inference.yml"
+  ],
+  "files": [
+    {
+      "path": "layout/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/PP-DocLayoutV2_onnx/resolve/7d44592493df02e28110d99de8ca4b1fbc7309bd/inference.onnx",
+      "size": 213963712,
+      "sha256": "cd540dc296ff3115fe78efa65b68501e6a8dc74b198acc9834a725ffaa095aac"
+    },
+    {
+      "path": "layout/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/PP-DocLayoutV2_onnx/resolve/7d44592493df02e28110d99de8ca4b1fbc7309bd/inference.yml",
+      "size": 1482,
+      "sha256": "93100e0fb2cd76b9d246a853deea85e191d8333b2cfca7be76e82e4c4ebfa819"
+    },
+    {
+      "path": "region/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/PP-DocBlockLayout_onnx/resolve/bcbfaadf1a9b7197def8c01337cd5bbbef261fbd/inference.onnx",
+      "size": 129353461,
+      "sha256": "faeca9767c960700376a3dfc3cad1d2cdce3bb035b06287a69806e7430938288"
+    },
+    {
+      "path": "region/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/PP-DocBlockLayout_onnx/resolve/bcbfaadf1a9b7197def8c01337cd5bbbef261fbd/inference.yml",
+      "size": 1619,
+      "sha256": "3d3d5035825b1a2de3348c646e463798d85b9f8c7c5155a81757172261036e1b"
+    },
+    {
+      "path": "detector/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det_onnx/resolve/dcf248c4dcc064c6d030db241255f9e8fbc6733a/inference.onnx",
+      "size": 88116791,
+      "sha256": "10803475a591f7dc623e24670fb5752ec94d39a1f8cf069aac1b6f0ce19cfc85"
+    },
+    {
+      "path": "detector/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det_onnx/resolve/dcf248c4dcc064c6d030db241255f9e8fbc6733a/inference.yml",
+      "size": 903,
+      "sha256": "28fb721efc3634fc8aa677e474b9602cb815a91cf569ef357a7a553d7b3ce685"
+    },
+    {
+      "path": "recognizer/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx/resolve/5c6f574b8e2230adf4287b33e736d71b9fabd28e/inference.onnx",
+      "size": 13418787,
+      "sha256": "92f0b7785e64fc9090106a241cf4c1eb97472824558272751b88a2a4476d3a08"
+    },
+    {
+      "path": "recognizer/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx/resolve/5c6f574b8e2230adf4287b33e736d71b9fabd28e/inference.yml",
+      "size": 96039,
+      "sha256": "f757fa1c40e99edcf27e9cce879b93eb2a51fa46f5ef39095689b8c37dd75998"
+    },
+    {
+      "path": "table_classifier/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/PP-LCNet_x1_0_table_cls_onnx/resolve/605f623b09f67a562bae77e781d5d5266f14905a/inference.onnx",
+      "size": 6777817,
+      "sha256": "f8e4cb1b58a29bebd36852edcb238b53e0acefa75116a8a4db443f13dbc72b0b"
+    },
+    {
+      "path": "table_classifier/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/PP-LCNet_x1_0_table_cls_onnx/resolve/605f623b09f67a562bae77e781d5d5266f14905a/inference.yml",
+      "size": 762,
+      "sha256": "891b1f4b0ccddaf6aca0fce8c8a38e5ab5da9f62fb9adaa7c75e161ee03bb787"
+    },
+    {
+      "path": "wired_table_structure/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/SLANeXt_wired_onnx/resolve/04356de883011f433f83e5098793f3a501a9af6e/inference.onnx",
+      "size": 367743373,
+      "sha256": "0a6e063b56e35a434eb6669eb2342113c6bd76a6ce5acaa0331f370c9e00732f"
+    },
+    {
+      "path": "wired_table_structure/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/SLANeXt_wired_onnx/resolve/04356de883011f433f83e5098793f3a501a9af6e/inference.yml",
+      "size": 2066,
+      "sha256": "abbbd1b4dc6b1a2e9cd34c035514da53a1a6b1ec267292b0b8802025650a33bf"
+    },
+    {
+      "path": "wireless_table_structure/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/SLANet_plus_onnx/resolve/7dbe640e127602bf506815e822c09758de73c482/inference.onnx",
+      "size": 7782138,
+      "sha256": "7790c0c13ce064782c9d22ebeb16b4da8216f83d3ba576da962c106ef58386da"
+    },
+    {
+      "path": "wireless_table_structure/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/SLANet_plus_onnx/resolve/7dbe640e127602bf506815e822c09758de73c482/inference.yml",
+      "size": 2035,
+      "sha256": "8a6372d3269a6f112fe13a2da7952a84da6e112c10a3146cbb43de5bd01d19fa"
+    },
+    {
+      "path": "wired_table_cells/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/RT-DETR-L_wired_table_cell_det_onnx/resolve/b2c0720b5fe6f1c0dd40f8a7993a3f28e04252f8/inference.onnx",
+      "size": 129353461,
+      "sha256": "bf5490020512a31f43813d90feadae9526a2c3474ffe807571f2c23594f5958f"
+    },
+    {
+      "path": "wired_table_cells/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/RT-DETR-L_wired_table_cell_det_onnx/resolve/b2c0720b5fe6f1c0dd40f8a7993a3f28e04252f8/inference.yml",
+      "size": 1630,
+      "sha256": "edf6d6180f2b9e3e666c744ee5ded38a72c6ef9056cd193250e3e55ba268acef"
+    },
+    {
+      "path": "wireless_table_cells/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/RT-DETR-L_wireless_table_cell_det_onnx/resolve/94c021be206064f0136ef1383fbd4b68b168fa61/inference.onnx",
+      "size": 129353461,
+      "sha256": "47515940ec5c37156e09aa9acb20c4e7e22456cad6ce49473661f1762fb46a78"
+    },
+    {
+      "path": "wireless_table_cells/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/RT-DETR-L_wireless_table_cell_det_onnx/resolve/94c021be206064f0136ef1383fbd4b68b168fa61/inference.yml",
+      "size": 1633,
+      "sha256": "f2d0f00ea42aacc162f72a35cf54330e392a7d669e9a1b43896d3bd77a512621"
+    }
+  ]
+}

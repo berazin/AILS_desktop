@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "approved_for_commercial_redistribution": false,
+  "lock_sha256": "8fada76fb66424cd7b84ef5958ba44ef0f52383b0a5b2142afce273635a38395",
+  "reviewed_by": "",
+  "reviewed_at": "",
+  "approval_scope": "",
+  "notes": "Review every pinned wheel, ONNX Runtime and OpenVINO notices, and NVIDIA CUDA/cuDNN redistribution terms before approval."
+}

@@ -1,0 +1,37 @@
+.ails-processbar-texture [data-settings-tab-surface] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ails-processbar-texture [data-settings-tab-liquid] {
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: calc(100% + 18px);
+  height: 100%;
+  overflow: visible;
+}
+
+.ails-processbar-texture [data-tab-id][data-active="true"]:is([data-tab-detached="true"], [data-liquid-tab-motion]) {
+  background-color: transparent !important;
+  /* The SVG owns the whole silhouette. A background-color transition leaves
+     the old connected tab fading behind it as a rectangular second surface. */
+  transition-property: border-color, color;
+}
+
+.ails-processbar-texture [data-tab-id][data-active="true"]:is([data-tab-detached="true"], [data-liquid-tab-motion])::before,
+.ails-processbar-texture [data-tab-id][data-active="true"]:is([data-tab-detached="true"], [data-liquid-tab-motion])::after {
+  display: none;
+}
+
+.ails-processbar-texture [data-tab-id][data-active="true"]:is([data-tab-detached="true"], [data-liquid-tab-motion]) > [data-settings-tab-surface] {
+  display: block;
+}
+
+.ails-processbar-texture [data-tab-id][data-active="true"] svg[data-tab-icon="settings"],
+.ails-processbar-texture [data-tab-id][data-active="true"] svg[data-tab-icon="settings"] * {
+  color: var(--processbar-active-foreground) !important;
+}

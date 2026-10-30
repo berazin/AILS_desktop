@@ -1,0 +1,23 @@
+Intel OpenMP redistribution evidence for AILS
+
+Reviewed Windows filename: libiomp5md.dll
+Reviewed file version: 20250910
+Reviewed SHA-256: 982233366b0afcda1e0f55a0b134097e35b779613f54ddb69e685e6cd06b755f
+
+Official Intel Simplified Software License page:
+https://www.intel.com/content/www/us/en/developer/articles/license/end-user-license-agreement.html
+
+Pinned Intel Simplified Software License PDF (October 2022):
+https://cdrdv2-public.intel.com/749362/intel-simplified-license-software-october-2022.pdf
+
+Official Intel oneMKL licensing FAQ stating that redistribution is allowed
+under the Intel Simplified Software License:
+https://www.intel.com/content/www/us/en/developer/articles/tool/onemkl-license-faq.html
+
+This evidence file is not a replacement for Intel's license. Before approving
+a release, the release owner must verify the exact DLL hash, file version, and
+Intel Authenticode signature and confirm that the binary was obtained through
+the reviewed CTranslate2 wheel or an official Intel redistributable package.
+
+Intel is a trademark of Intel Corporation or its subsidiaries. AILS is not
+sponsored or endorsed by Intel.

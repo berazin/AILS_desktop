@@ -1,0 +1,25 @@
+[data-liquid-more-surface] {
+  z-index: 179;
+  filter: drop-shadow(0 10px 16px rgb(0 0 0 / 14%));
+}
+
+[data-liquid-more-surface] > svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+[data-liquid-more-motion="open"] > [data-liquid-more-surface] {
+  filter: none;
+}
+
+[data-ails-document-popover][data-liquid-more-panel] {
+  background: transparent !important;
+  border-color: transparent !important;
+  opacity: var(--liquid-menu-reveal, 1);
+}
+
+[data-liquid-more-motion] > button {
+  position: relative;
+  z-index: 181;
+}

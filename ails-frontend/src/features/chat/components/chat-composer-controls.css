@@ -1,0 +1,47 @@
+.ails-chat-composer-popup {
+  opacity: 1;
+  translate: 0 0;
+  transition: opacity 160ms ease, translate 160ms ease;
+}
+
+@starting-style {
+  .ails-chat-composer-popup[data-state="open"] { opacity: 0; translate: 0 6px; }
+}
+
+.ails-chat-composer-popup[data-state="closed"] { opacity: 0; translate: 0 6px; pointer-events: none; }
+
+.ails-chat-reasoning-slider {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  border-radius: 999px;
+  background: linear-gradient(to right, #3b82f6 0%, #3b82f6 var(--reasoning-fill), var(--muted) var(--reasoning-fill), var(--muted) 100%);
+  cursor: pointer;
+}
+
+.ails-chat-reasoning-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d4d4d8;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px #0002;
+}
+
+.ails-chat-reasoning-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d4d4d8;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.ails-chat-reasoning-slider:focus-visible { outline: 2px solid #3b82f6; outline-offset: 5px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ails-chat-composer-popup { transition: none; }
+}

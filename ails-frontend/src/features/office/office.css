@@ -1,0 +1,11 @@
+.office-workspace { display:flex; flex-direction:column; height:100%; min-height:0; color:var(--foreground); background:var(--panel); }
+.office-toolbar,.office-format-options { display:flex; align-items:center; flex-wrap:wrap; gap:6px; padding:8px; border-bottom:1px solid var(--border); font-size:12px; flex-shrink:0; }
+.office-toolbar button,.office-format-options button,.office-notice button,.office-review button { display:inline-flex; align-items:center; gap:4px; border-radius:5px; padding:5px 8px; background:var(--muted); cursor:pointer; }
+.office-toolbar button:disabled { opacity:.4; cursor:default; }
+.office-engine { flex:1; min-height:0; overflow:hidden; position:relative; }
+.office-notice { display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding:6px 12px; font-size:12px; background:var(--muted); }
+.office-canvas-scroll { overflow:auto; flex:1; min-height:0; background:#e9edf2; padding:16px; }
+.office-canvas-page { width:max-content; margin:auto; }
+.office-review { padding:12px; border-bottom:1px solid var(--border); font-size:13px; }
+.office-review textarea { display:block; width:100%; min-height:80px; background:var(--background); border:1px solid var(--border); }
+.office-review pre { white-space:pre-wrap; max-height:200px; overflow:auto; }

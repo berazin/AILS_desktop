@@ -1,0 +1,2 @@
+[data-practice-navigation-collapsed="true"] > :not([data-practice-navigation-rail]) { display: none; }
+[data-practice-navigation-collapsed="true"] { padding: 0 !important; overflow: hidden; }

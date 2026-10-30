@@ -1,0 +1,224 @@
+.ails-update-panel,
+.ails-update-notice {
+  --update-accent: var(--brand);
+  --update-tint: color-mix(in srgb, var(--brand) 9%, var(--panel));
+  color: var(--foreground);
+  background: rgb(from var(--panel) r g b / 1);
+  border: 1px solid var(--border);
+}
+
+:is(.ails-update-panel, .ails-update-notice)[data-tone="success"] {
+  --update-accent: light-dark(#15803d, #86efac);
+  --update-tint: color-mix(in srgb, var(--update-accent) 9%, var(--panel));
+}
+
+:is(.ails-update-panel, .ails-update-notice)[data-tone="warning"] {
+  --update-accent: light-dark(#b45309, #fbbf24);
+  --update-tint: color-mix(in srgb, var(--update-accent) 9%, var(--panel));
+}
+
+.ails-update-panel {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.ails-update-body {
+  padding: 28px;
+}
+
+.ails-update-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ails-update-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 14px;
+  color: var(--update-accent);
+  background: var(--update-tint);
+}
+
+.ails-update-eyebrow {
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--muted-foreground);
+}
+
+.ails-update-versions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--background);
+}
+
+.ails-update-versions dt {
+  font-size: 11px;
+  color: var(--muted-foreground);
+}
+
+.ails-update-versions dd {
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+  font-size: 22px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+
+.ails-update-stages {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.ails-update-stages li {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 7px;
+  padding-top: 10px;
+  border-top: 2px solid var(--border);
+}
+
+.ails-update-stages li[aria-current],
+.ails-update-stages li[data-complete] {
+  border-color: var(--update-accent);
+}
+
+.ails-update-stages li[aria-current] {
+  font-weight: 600;
+  color: var(--update-accent);
+}
+
+.ails-update-stage-number {
+  display: grid;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--muted);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+[aria-current] > .ails-update-stage-number,
+[data-complete] > .ails-update-stage-number {
+  color: var(--update-accent);
+  background: var(--update-tint);
+}
+
+.ails-update-progress {
+  margin-top: 20px;
+}
+
+.ails-update-track {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--muted);
+}
+
+.ails-update-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--update-accent);
+  transition: width 180ms ease-out;
+}
+
+.ails-update-fill[data-indeterminate] {
+  width: 38%;
+  animation: ails-update-progress 1.5s ease-in-out infinite;
+}
+
+.ails-update-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 28px;
+  border-top: 1px solid var(--border);
+}
+
+.ails-update-error {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--update-accent) 25%, var(--border));
+  border-radius: 10px;
+  background: var(--update-tint);
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ails-update-notice {
+  position: fixed;
+  top: 48px;
+  right: 16px;
+  z-index: 280;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px color-mix(in srgb, var(--foreground) 12%, transparent);
+}
+
+body:has([data-ails-update-view="true"]) .ails-update-notice {
+  display: none;
+}
+
+.ails-update-notice .ails-update-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.ails-update-notice .ails-update-progress {
+  margin-top: 14px;
+}
+
+.ails-update-notice .ails-update-stages {
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 11px;
+}
+
+.ails-update-notice .ails-update-stage-number {
+  width: 16px;
+  height: 16px;
+  font-size: 9px;
+}
+
+@keyframes ails-update-progress {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(265%); }
+}
+
+@media (max-width: 540px) {
+  .ails-update-body { padding: 20px; }
+  .ails-update-heading { gap: 12px; }
+  .ails-update-footer { padding: 16px 20px; }
+  .ails-update-versions { gap: 12px; padding: 16px; }
+  .ails-update-versions dd { font-size: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ails-update-fill { transition: none; }
+  .ails-update-fill[data-indeterminate] { animation: none; width: 100%; opacity: 0.5; }
+}

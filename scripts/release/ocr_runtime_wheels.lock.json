@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "python_tag": "cp312-cp312-win_amd64",
+  "priority": ["cuda", "openvino", "directml"],
+  "runtimes": {
+    "cuda": {
+      "provider": "CUDAExecutionProvider",
+      "packages": [
+        {
+          "name": "onnxruntime-gpu",
+          "version": "1.29.0",
+          "filename": "onnxruntime_gpu-1.29.0-cp312-cp312-win_amd64.whl",
+          "sha256": "a64aa7c3dd7fa6b29fa7bcb0439ebd204607a590d3ce02bb276672257da4a454",
+          "url": "https://files.pythonhosted.org/packages/e0/b1/99a89878969f0bed05cc6be5ae95f75929fbb0fbb5884497814f2ec12ba0/onnxruntime_gpu-1.29.0-cp312-cp312-win_amd64.whl"
+        },
+        {
+          "name": "nvidia-cuda-runtime",
+          "version": "13.3.29",
+          "filename": "nvidia_cuda_runtime-13.3.29-py3-none-win_amd64.whl",
+          "sha256": "0667ec61c3d897388efa305ed4f7609ace88849a753ba9c6311d06dca55fff4f",
+          "url": "https://files.pythonhosted.org/packages/d2/27/b53a5e0397842a5c11f0e1a39d4e5b2f22638a4126e83b3c4e196f62c969/nvidia_cuda_runtime-13.3.29-py3-none-win_amd64.whl"
+        },
+        {
+          "name": "nvidia-cuda-nvrtc",
+          "version": "13.3.33",
+          "filename": "nvidia_cuda_nvrtc-13.3.33-py3-none-win_amd64.whl",
+          "sha256": "7d2af818851c0c224d5f92221e9226e51ee23c236df4b51f9194563979c888be",
+          "url": "https://files.pythonhosted.org/packages/a1/42/edce72f2c5a0f587168109c867f25f4a9a6cd7289ecf0d68ed2b1070f273/nvidia_cuda_nvrtc-13.3.33-py3-none-win_amd64.whl"
+        },
+        {
+          "name": "nvidia-cufft",
+          "version": "12.3.0.29",
+          "filename": "nvidia_cufft-12.3.0.29-py3-none-win_amd64.whl",
+          "sha256": "510036a2bbab5c83ae93dc5c907c3a49d3518e3066ac3a2052ff0f7f9b27dfc4",
+          "url": "https://files.pythonhosted.org/packages/94/64/8e9d808720559d3cbfcd1d1bc8a2e6f55deb29d692513d5a93c8d417b7e5/nvidia_cufft-12.3.0.29-py3-none-win_amd64.whl"
+        },
+        {
+          "name": "nvidia-curand",
+          "version": "10.4.3.29",
+          "filename": "nvidia_curand-10.4.3.29-py3-none-win_amd64.whl",
+          "sha256": "34b18d5a2a8e5db4c3846475ae4eef0cacdf3ac5e9c501f3a4efb422f137a74e",
+          "url": "https://files.pythonhosted.org/packages/2a/eb/63f7710fc84837e0118002bc29671542807921aef3a0c710da83a5e7e711/nvidia_curand-10.4.3.29-py3-none-win_amd64.whl"
+        },
+        {
+          "name": "nvidia-cudnn-cu13",
+          "version": "9.25.1.1",
+          "filename": "nvidia_cudnn_cu13-9.25.1.1-py3-none-win_amd64.whl",
+          "sha256": "e1de75bf1ad9040414f9b13cc87135d660d13dd3c859180dd6b63353e571f860",
+          "url": "https://files.pythonhosted.org/packages/fd/0f/d7e4141c1126899c7b8d202eb3085380164beefef32f94cc8967ed3a00ff/nvidia_cudnn_cu13-9.25.1.1-py3-none-win_amd64.whl"
+        },
+        {
+          "name": "nvidia-cublas",
+          "version": "13.6.0.2",
+          "filename": "nvidia_cublas-13.6.0.2-py3-none-win_amd64.whl",
+          "sha256": "3b5bcd6bfb6f65010ebf195851bcb9b2aa34b9fe08479432002991c1fe84b67d",
+          "url": "https://files.pythonhosted.org/packages/08/8f/890a96ea1ff615100296977cce23296052dcb8c114d4e451201ec39df9bf/nvidia_cublas-13.6.0.2-py3-none-win_amd64.whl"
+        },
+        {
+          "name": "nvidia-nvjitlink",
+          "version": "13.3.33",
+          "filename": "nvidia_nvjitlink-13.3.33-py3-none-win_amd64.whl",
+          "sha256": "4297ee49639b4f2e07255a1d69b3acc7ab2d011bb892b403e91ac98368962e3b",
+          "url": "https://files.pythonhosted.org/packages/67/f2/ec9c05a108095828dfc58840978c627b3c313fdf2a567c6de9ffbbb46901/nvidia_nvjitlink-13.3.33-py3-none-win_amd64.whl"
+        }
+      ]
+    },
+    "openvino": {
+      "provider": "OpenVINOExecutionProvider",
+      "packages": [
+        {
+          "name": "onnxruntime-openvino",
+          "version": "1.24.1",
+          "filename": "onnxruntime_openvino-1.24.1-cp312-cp312-win_amd64.whl",
+          "sha256": "f186335a9c9b255633275290da7521d3d4d14c7773fee3127bfa040234d3fa5a",
+          "url": "https://files.pythonhosted.org/packages/59/37/d301f2c68b19a9485ed5db3047e0fb52478f3e73eb08c7d2a7c61be7cc1c/onnxruntime_openvino-1.24.1-cp312-cp312-win_amd64.whl"
+        },
+        {
+          "name": "openvino",
+          "version": "2025.4.1",
+          "filename": "openvino-2025.4.1-20426-cp312-cp312-win_amd64.whl",
+          "sha256": "c50293d1463698012eaa526dcc83f841b85a3f4952eea4c9445c83e0346f8e80",
+          "url": "https://files.pythonhosted.org/packages/64/c2/582bd6d01fc6588bfe35c0f363d294a54daa4587cafe30e932fa51420d04/openvino-2025.4.1-20426-cp312-cp312-win_amd64.whl"
+        },
+        {
+          "name": "openvino-telemetry",
+          "version": "2025.2.0",
+          "filename": "openvino_telemetry-2025.2.0-py3-none-any.whl",
+          "sha256": "bcb667e83a44f202ecf4cfa49281715c6d7e21499daec04ff853b7f964833599",
+          "url": "https://files.pythonhosted.org/packages/3b/ac/5ab0ca0aa269ad3c73f7bfc3801b10e5f56f75a31bf68c1ae8bd51cf70a4/openvino_telemetry-2025.2.0-py3-none-any.whl"
+        }
+      ]
+    },
+    "directml": {
+      "provider": "DmlExecutionProvider",
+      "packages": [
+        {
+          "name": "onnxruntime-directml",
+          "version": "1.24.4",
+          "filename": "onnxruntime_directml-1.24.4-cp312-cp312-win_amd64.whl",
+          "sha256": "f2ecb68b7b7b259d2ef3112ae760149f9b5a1e7c0fbb73d539da6250a648a614",
+          "url": "https://files.pythonhosted.org/packages/88/ea/33814eb0ec96775eda4c1d30b0d86e91d7d2cd0d84c66d3915aef0e06fa3/onnxruntime_directml-1.24.4-cp312-cp312-win_amd64.whl"
+        }
+      ]
+    }
+  }
+}

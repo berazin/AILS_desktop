@@ -1,0 +1,46 @@
+.ails-settings-sidebar-texture {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #1c2028;
+  background-image: url("../../../assets/sidebar-mist.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.ails-settings-sidebar-content {
+  --sidebar: rgba(38, 47, 60, 0.55);
+  --background: rgba(29, 37, 47, 0.4);
+  --foreground: #f5f7fa;
+  --muted: rgba(255, 255, 255, 0.1);
+  --muted-foreground: rgba(240, 244, 248, 0.72);
+  --border: rgba(255, 255, 255, 0.16);
+  --panel: rgba(38, 47, 60, 0.6);
+  --brand-soft: rgba(147, 197, 253, 0.24);
+  --interactive-hover: rgba(255, 255, 255, 0.12);
+  --interactive-hover-strong: rgba(255, 255, 255, 0.2);
+}
+
+.ails-settings-sidebar-content * {
+  color: rgba(255, 255, 255, 0.94) !important;
+}
+
+.ails-settings-sidebar-content .bg-white {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.ails-settings-sidebar-content button {
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease;
+}
+
+.ails-settings-sidebar-content button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(120, 170, 255, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(120, 170, 255, 0.18),
+    0 8px 24px rgba(80, 140, 255, 0.18);
+}

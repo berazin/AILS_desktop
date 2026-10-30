@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AILS</title><link rel="stylesheet" href="/viewer.css"><link rel="stylesheet" href="/chrome.css"></head>
+<body>
+<header id="titlebar" data-ails-processbar>
+  <div class="titlebar-left">
+    <button id="home" class="logo" data-feature="home" title="홈으로 이동" aria-label="홈으로 이동"><img src="/brand/logo.png" alt="AILS"></button>
+    <div class="navigation"><button id="back" data-icon="arrow-left" title="이전 (뒤로)" aria-label="이전" disabled></button><button id="forward" data-icon="arrow-right" title="다음 (앞으로)" aria-label="다음" disabled></button></div>
+    <span class="separator"></span>
+    <nav id="tabs" role="tablist" aria-label="열린 문서"><button id="new-tab" data-feature="new-tab" data-icon="plus" title="새 홈 탭" aria-label="새 탭"></button></nav>
+    <span class="separator"></span>
+    <div class="document-actions">
+      <button id="edit" data-feature="edit" data-icon="edit" title="문서 편집" hidden>편집</button>
+      <button data-feature="materials" data-icon="folder" title="폴더 트리" aria-label="폴더 트리"></button>
+      <button data-feature="insight" data-icon="book">Insight</button>
+      <button id="practice" data-feature="practice" data-icon="file">문제풀이</button>
+      <button id="bookmarks" data-feature="bookmarks" data-icon="bookmark">북마크</button>
+      <div class="menu-container">
+        <button id="more" data-icon="more" title="문서 더보기" aria-label="문서 더보기" aria-expanded="false" aria-haspopup="menu"></button>
+        <div id="more-menu" role="menu" aria-label="문서 도구" hidden>
+          <button id="chat" role="menuitem" data-feature="chat" data-icon="chat">학습 챗봇</button>
+          <button role="menuitem" data-feature="history" data-icon="history">질문 기록</button>
+          <button id="ocr" role="menuitem" data-feature="ocr" data-icon="scan">OCR</button>
+          <div role="separator"></div>
+          <button id="view-settings" role="menuitem" data-icon="settings">PDF 보기 설정</button>
+          <button role="menuitem" data-feature="code" data-icon="code">코드</button>
+          <button role="menuitem" data-feature="work-queue" data-icon="list">작업 목록</button>
+          <button role="menuitem" data-feature="feedback" data-icon="chat">피드백</button>
+        </div>
+        <section id="pdf-settings" role="dialog" aria-label="PDF 보기 설정" hidden>
+          <div class="settings-heading"><strong>PDF 보기 설정</strong><button id="close-settings" data-icon="close" aria-label="보기 설정 닫기"></button></div>
+          <div class="zoom-controls"><span>확대 / 축소</span><button id="zoom-out" data-icon="minus" aria-label="축소"></button><output id="zoom-label">100%</output><button id="zoom-in" data-icon="plus" aria-label="확대"></button></div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="window-controls"><button id="minimize" data-icon="minus" aria-label="최소화"></button><button id="maximize" data-icon="square" aria-label="최대화"></button><button id="close" data-icon="close" aria-label="닫기"></button></div>
+</header>
+<div id="status" role="status" hidden></div>
+<div class="viewer">
+  <div id="pdf-controls" hidden><button id="previous" data-icon="left" aria-label="이전 페이지"></button><button id="page-label" aria-label="페이지 이동"></button><input id="page" type="number" min="1" value="1" aria-label="페이지" hidden><span id="page-count" hidden></span><button id="next" data-icon="right" aria-label="다음 페이지"></button></div>
+  <button id="search" data-feature="search" data-icon="search" hidden>검색·목차</button>
+  <main id="content" tabindex="0" aria-label="문서 본문"></main>
+</div>
+<script type="module" src="/viewer.js"></script></body></html>

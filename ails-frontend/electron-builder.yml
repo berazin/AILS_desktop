@@ -1,0 +1,60 @@
+appId: com.ails.desktop
+productName: AILS
+copyright: Copyright 짤 2026 議곕???
+
+directories:
+  output: ../dist/AILS_electron
+  buildResources: ../installer
+
+files:
+  - from: ../build/frontend_developer
+    to: dist
+  - electron/**/*
+  - package.json
+
+extraResources:
+  - from: ../assets/AILS_white.png
+    to: viewer-brand/AILS_white.png
+  - from: src/assets/sidebar-mist.jpg
+    to: viewer-brand/sidebar-mist.jpg
+  - from: ../build/electron_backend_developer/AILSBackend
+    to: backend/AILSBackend
+  - from: ../build/frontend_developer
+    to: frontend
+  - from: ../build/license_bundle_developer
+    to: licenses
+  - from: ../assets/AILS.ico
+    to: AILS.ico
+  - from: ../assets/AILS-taskbar.ico
+    to: AILS-taskbar.ico
+
+win:
+  icon: ../assets/AILS.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  include: ../installer/installer.nsh
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  artifactName: AILS-Setup-${version}.${ext}
+
+publish:
+  provider: github
+  owner: berazin
+  repo: AILS_desktop
+  private: false
+  releaseType: release
+
+asar: true
+
+fileAssociations:
+  - ext: [md, txt, pdf, ipynb, ppt, pptx, docx, xlsx, csv, hwp, hwpx, html, htm, epub, mobi, azw, azw3, fb2, rtf]
+    name: AILS.Document
+    description: AILS Document
+    role: Editor

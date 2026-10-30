@@ -1,0 +1,28 @@
+NVIDIA cuDNN redistribution evidence for AILS
+
+Reviewed binary family: cuDNN runtime DLL
+Reviewed version: 9.10.2.21
+Reviewed Windows filename: cudnn64_9.dll
+Reviewed SHA-256: 9edbcdff73b0af070eb160b2ce66e59feca04aa017351d8eedcc5e8e149967d2
+
+Official redistributable archive index:
+https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/windows-x86_64/
+
+Official cuDNN 9.10.2 software license agreement:
+https://docs.nvidia.com/deeplearning/cudnn/backend/v9.10.2/reference/eula.html
+
+Official cuDNN installation documentation explains that NVIDIA publishes a
+versioned redistributable manifest containing license names, relative URLs,
+and checksums:
+https://docs.nvidia.com/deeplearning/cudnn/installation/latest/windows.html
+
+The cuDNN supplement identifies runtime .dll files as distributable only when
+the agreement's distribution requirements are satisfied. This evidence file
+is not a replacement for the NVIDIA agreement. Before approving a release,
+the release owner must verify the exact DLL hash and NVIDIA Authenticode
+signature, keep the DLL in the application's private directory, and confirm
+that the AILS customer terms satisfy NVIDIA's requirements.
+
+NVIDIA and cuDNN are trademarks or registered trademarks of NVIDIA
+Corporation in the United States and other countries. AILS is not sponsored
+or endorsed by NVIDIA.

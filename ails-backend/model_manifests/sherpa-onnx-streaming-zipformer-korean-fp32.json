@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "model_id": "sherpa-onnx-streaming-zipformer-korean-fp32",
+  "version": "2024.06.16",
+  "purpose": "Low-latency Korean streaming speech recognition with Silero VAD",
+  "license": "Apache-2.0",
+  "file_size": 314817188,
+  "download_urls": [
+    "https://huggingface.co/k2-fsa/sherpa-onnx-streaming-zipformer-korean-2024-06-16",
+    "https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models"
+  ],
+  "required_files": [
+    "encoder-epoch-99-avg-1.onnx",
+    "decoder-epoch-99-avg-1.onnx",
+    "joiner-epoch-99-avg-1.onnx",
+    "tokens.txt",
+    "silero_vad.onnx"
+  ],
+  "files": [
+    {
+      "path": "encoder-epoch-99-avg-1.onnx",
+      "url": "https://huggingface.co/k2-fsa/sherpa-onnx-streaming-zipformer-korean-2024-06-16/resolve/ba6078bca4daf3f0dd37f79d0ab505af71df14a6/encoder-epoch-99-avg-1.onnx",
+      "size": 292543537,
+      "sha256": "9d407aec62d2b935168dcb0bdbfe65a26948fbeae95d77bc94e5e6b1c8221717"
+    },
+    {
+      "path": "decoder-epoch-99-avg-1.onnx",
+      "url": "https://huggingface.co/k2-fsa/sherpa-onnx-streaming-zipformer-korean-2024-06-16/resolve/ba6078bca4daf3f0dd37f79d0ab505af71df14a6/decoder-epoch-99-avg-1.onnx",
+      "size": 11309084,
+      "sha256": "b29cfb4575141e50a30a22b2c4579934f3d4f45b83c9c8c08c3aef5a3fa7abfc"
+    },
+    {
+      "path": "joiner-epoch-99-avg-1.onnx",
+      "url": "https://huggingface.co/k2-fsa/sherpa-onnx-streaming-zipformer-korean-2024-06-16/resolve/ba6078bca4daf3f0dd37f79d0ab505af71df14a6/joiner-epoch-99-avg-1.onnx",
+      "size": 10260467,
+      "sha256": "dffb3a863fddc402920a15e2a1ca9f6f3f7445583718a2bef2006fd6d932d60b"
+    },
+    {
+      "path": "tokens.txt",
+      "url": "https://huggingface.co/k2-fsa/sherpa-onnx-streaming-zipformer-korean-2024-06-16/resolve/ba6078bca4daf3f0dd37f79d0ab505af71df14a6/tokens.txt",
+      "size": 60246,
+      "sha256": "016bdf0965029263b7ad01b742366ee542ef0bef38261510e8176ff6f2e9e668"
+    },
+    {
+      "path": "silero_vad.onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx",
+      "size": 643854,
+      "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6"
+    }
+  ]
+}

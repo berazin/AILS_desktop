@@ -1,0 +1,399 @@
+{
+  "schema_version": 2,
+  "platform": "win_amd64",
+  "abi_tags": [
+    "cp311",
+    "cp312",
+    "cp313"
+  ],
+  "packages": [
+    {
+      "name": "ipykernel",
+      "version": "6.29.5",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "ipykernel-6.29.5-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/94/5c/368ae6c01c7628438358e6d337c19b05425727fbb221d2a3c4303c372f42/ipykernel-6.29.5-py3-none-any.whl",
+          "sha256": "afdb66ba5aa354b09b91379bac28ae4afebbb30e8b39510c9690afb7a10421b5",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "comm",
+      "version": "0.2.2",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "comm-0.2.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/e6/75/49e5bfe642f71f272236b5b2d2691cf915a7283cc0ceda56357b61daa538/comm-0.2.2-py3-none-any.whl",
+          "sha256": "e6fb86cb70ff661ee8c9c14e7d36d6de3b4066f1441be4063df9c5009f0a64d3",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "debugpy",
+      "version": "1.8.9",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "debugpy-1.8.9-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/2d/23/3f5804202da11c950dc0caae4a62d0c9aadabdb2daeb5f7aa09838647b5d/debugpy-1.8.9-py2.py3-none-any.whl",
+          "sha256": "cc37a6c9987ad743d9c3a14fa1b1a14b7e4e6041f9dd0c8abf8895fe7a97b899",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "ipython",
+      "version": "8.28.0",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "ipython-8.28.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/f4/3a/5d8680279ada9571de8469220069d27024ee47624af534e537c9ff49a450/ipython-8.28.0-py3-none-any.whl",
+          "sha256": "530ef1e7bb693724d3cdc37287c80b07ad9b25986c007a53aa1857272dac3f35",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "jedi",
+      "version": "0.19.1",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "jedi-0.19.1-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/20/9f/bc63f0f0737ad7a60800bfd472a4836661adae21f9c2535f3957b1e54ceb/jedi-0.19.1-py2.py3-none-any.whl",
+          "sha256": "e983c654fe5c02867aef4cdfce5a2fbb4a50adc0af145f70504238f18ef5e7e0",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "parso",
+      "version": "0.8.4",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "parso-0.8.4-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/c6/ac/dac4a63f978e4dcb3c6d3a78c4d8e0192a113d288502a1216950c41b1027/parso-0.8.4-py2.py3-none-any.whl",
+          "sha256": "a418670a20291dacd2dddc80c377c5c3791378ee1e8d12bffc35420643d43f18",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "jupyter_client",
+      "version": "8.6.3",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "jupyter_client-8.6.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/11/85/b0394e0b6fcccd2c1eeefc230978a6f8cb0c5df1e4cd3e7625735a0d7d1e/jupyter_client-8.6.3-py3-none-any.whl",
+          "sha256": "e8a19cc986cc45905ac3362915f410f3af85424b4c0905e94fa5f2cb08e8f23f",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "jupyter_core",
+      "version": "5.7.2",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "jupyter_core-5.7.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/c9/fb/108ecd1fe961941959ad0ee4e12ee7b8b1477247f30b1fdfd83ceaf017f0/jupyter_core-5.7.2-py3-none-any.whl",
+          "sha256": "4f7315d2f6b4bcf2e3e7cb6e46772eba760ae459cd1f59d29eb57b0a01bd7409",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "matplotlib-inline",
+      "version": "0.1.7",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "matplotlib_inline-0.1.7-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/8f/8e/9ad090d3553c280a8060fbf6e24dc1c0c29704ee7d1c372f0c174aa59285/matplotlib_inline-0.1.7-py3-none-any.whl",
+          "sha256": "df192d39a4ff8f21b1895d72e6a13f5fcc5099f00fa84384e0ea28c2cc0653ca",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "nest_asyncio",
+      "version": "1.6.0",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "nest_asyncio-1.6.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/a0/c4/c2971a3ba4c6103a3d10c4b0f24f461ddc027f0f09763220cf35ca1401b3/nest_asyncio-1.6.0-py3-none-any.whl",
+          "sha256": "87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "24.2",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "packaging-24.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl",
+          "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.3.6",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "platformdirs-4.3.6-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl",
+          "sha256": "73e575e1408ab8103900836b97580d5307456908a03e92031bab39e4554cc3fb",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "prompt_toolkit",
+      "version": "3.0.48",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "prompt_toolkit-3.0.48-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/a9/6a/fd08d94654f7e67c52ca30523a178b3f8ccc4237fce4be90d39c938a831a/prompt_toolkit-3.0.48-py3-none-any.whl",
+          "sha256": "f49a827f90062e411f1ce1f854f2aedb3c23353244f8108b89283587397ac10e",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "pygments",
+      "version": "2.18.0",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "pygments-2.18.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/f7/3f/01c8b82017c199075f8f788d0d906b9ffbbc5a47dc9918a945e13d5a2bda/pygments-2.18.0-py3-none-any.whl",
+          "sha256": "b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "six",
+      "version": "1.16.0",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "six-1.16.0-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl",
+          "sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "stack_data",
+      "version": "0.6.3",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "stack_data-0.6.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl",
+          "sha256": "d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "executing",
+      "version": "2.1.0",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "executing-2.1.0-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/b5/fd/afcd0496feca3276f509df3dbd5dae726fcc756f1a08d9e25abe1733f962/executing-2.1.0-py2.py3-none-any.whl",
+          "sha256": "8d63781349375b5ebccc3142f4b30350c0cd9c79f921cde38be2be4637e98eaf",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "asttokens",
+      "version": "3.0.0",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "asttokens-3.0.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/25/8a/c46dcc25341b5bce5472c718902eb3d38600a903b14fa6aeecef3f21a46f/asttokens-3.0.0-py3-none-any.whl",
+          "sha256": "e3078351a059199dd5138cb1c706e6430c05eff2ff136af5eb4790f9d28932e2",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "pure_eval",
+      "version": "0.2.3",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "pure_eval-0.2.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/8e/37/efad0257dc6e593a18957422533ff0f87ede7c9c6ea010a2177d738fb82f/pure_eval-0.2.3-py3-none-any.whl",
+          "sha256": "1db8e35b67b3d218d818ae653e27f06c3aa420901fa7b081ca98cbedc874e0d0",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "traitlets",
+      "version": "5.14.3",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "traitlets-5.14.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/00/c0/8f5d070730d7836adc9c9b6408dec68c6ced86b304a9b26a14df072a6e8c/traitlets-5.14.3-py3-none-any.whl",
+          "sha256": "b74e89e397b1ed28cc831db7aea759ba6640cb3de13090ca145426688ff1ac4f",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "wcwidth",
+      "version": "0.2.13",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "wcwidth-0.2.13-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/fd/84/fd2ba7aafacbad3c4201d395674fc6348826569da3c0937e75505ead3528/wcwidth-0.2.13-py2.py3-none-any.whl",
+          "sha256": "3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+          "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "decorator",
+      "version": "5.1.1",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "decorator-5.1.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d5/50/83c593b07763e1161326b3b8c6686f0f4b0f24d5526546bee538c89837d6/decorator-5.1.1-py3-none-any.whl",
+          "sha256": "b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.12.2",
+      "kind": "pure",
+      "wheels": [
+        {
+          "filename": "typing_extensions-4.12.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl",
+          "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
+          "abi": "pure"
+        }
+      ]
+    },
+    {
+      "name": "psutil",
+      "version": "6.1.1",
+      "kind": "compiled",
+      "wheels": [
+        {
+          "filename": "psutil-6.1.1-cp37-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/7b/d7/7831438e6c3ebbfa6e01a927127a6cb42ad3ab844247f3c5b96bea25d73d/psutil-6.1.1-cp37-abi3-win_amd64.whl",
+          "sha256": "f35cfccb065fff93529d2afb4a2e89e363fe63ca1e4a5da22b603a85833c2649",
+          "abi": "abi3-cp37"
+        }
+      ]
+    },
+    {
+      "name": "pyzmq",
+      "version": "26.2.0",
+      "kind": "compiled",
+      "wheels": [
+        {
+          "filename": "pyzmq-26.2.0-cp311-cp311-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/3b/1b/0a540edd75a41df14ec416a9a500b9fec66e554aac920d4c58fbd5756776/pyzmq-26.2.0-cp311-cp311-win_amd64.whl",
+          "sha256": "5a509df7d0a83a4b178d0f937ef14286659225ef4e8812e05580776c70e155d5",
+          "abi": "cp311"
+        },
+        {
+          "filename": "pyzmq-26.2.0-cp312-cp312-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/ce/2c/a6f4a20202a4d3c582ad93f95ee78d79bbdc26803495aec2912b17dbbb6c/pyzmq-26.2.0-cp312-cp312-win_amd64.whl",
+          "sha256": "2a50625acdc7801bc6f74698c5c583a491c61d73c6b7ea4dee3901bb99adb27a",
+          "abi": "cp312"
+        },
+        {
+          "filename": "pyzmq-26.2.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/92/ae/6cc4657148143412b5819b05e362ae7dd09fb9fe76e2a539dcff3d0386bc/pyzmq-26.2.0-cp313-cp313-win_amd64.whl",
+          "sha256": "70fc7fcf0410d16ebdda9b26cbd8bf8d803d220a7f3522e060a69a9c87bf7bad",
+          "abi": "cp313"
+        }
+      ]
+    },
+    {
+      "name": "tornado",
+      "version": "6.4.1",
+      "kind": "compiled",
+      "wheels": [
+        {
+          "filename": "tornado-6.4.1-cp38-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/d9/2f/3f2f05e84a7aff787a96d5fb06821323feb370fe0baed4db6ea7b1088f32/tornado-6.4.1-cp38-abi3-win_amd64.whl",
+          "sha256": "b24b8982ed444378d7f21d563f4180a2de31ced9d8d84443907a0a64da2072e7",
+          "abi": "abi3-cp38"
+        }
+      ]
+    },
+    {
+      "name": "pywin32",
+      "version": "308",
+      "kind": "compiled",
+      "wheels": [
+        {
+          "filename": "pywin32-308-cp311-cp311-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/48/ef/f4fb45e2196bc7ffe09cad0542d9aff66b0e33f6c0954b43e49c33cad7bd/pywin32-308-cp311-cp311-win_amd64.whl",
+          "sha256": "575621b90f0dc2695fec346b2d6302faebd4f0f45c05ea29404cefe35d89442b",
+          "abi": "cp311"
+        },
+        {
+          "filename": "pywin32-308-cp312-cp312-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/21/27/0c8811fbc3ca188f93b5354e7c286eb91f80a53afa4e11007ef661afa746/pywin32-308-cp312-cp312-win_amd64.whl",
+          "sha256": "00b3e11ef09ede56c6a43c71f2d31857cf7c54b0ab6e78ac659497abd2834f47",
+          "abi": "cp312"
+        },
+        {
+          "filename": "pywin32-308-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/c7/50/b0efb8bb66210da67a53ab95fd7a98826a97ee21f1d22949863e6d588b22/pywin32-308-cp313-cp313-win_amd64.whl",
+          "sha256": "fd380990e792eaf6827fcb7e187b2b4b1cede0585e3d0c9e84201ec27b9905e4",
+          "abi": "cp313"
+        }
+      ]
+    }
+  ]
+}

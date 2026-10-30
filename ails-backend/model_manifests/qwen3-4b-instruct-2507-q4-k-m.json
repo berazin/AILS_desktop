@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "model_id": "qwen3-4b-instruct-2507-q4-k-m",
+  "version": "4edb920b6f14e3b9284d4502a6485103d72cde05",
+  "purpose": "Fast local Korean voice-command intent parsing with llama.cpp",
+  "license": "Apache-2.0",
+  "file_size": 2497280448,
+  "download_urls": [
+    "https://huggingface.co/lmstudio-community/Qwen3-4B-Instruct-2507-GGUF"
+  ],
+  "required_files": [
+    "Qwen3-4B-Instruct-2507-Q4_K_M.gguf"
+  ],
+  "files": [
+    {
+      "path": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "url": "https://huggingface.co/lmstudio-community/Qwen3-4B-Instruct-2507-GGUF/resolve/4edb920b6f14e3b9284d4502a6485103d72cde05/Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "size": 2497280448,
+      "sha256": "8cdb57cbb880d313736a9bc4e3d3d2485f145b5e19cf33783746e753e82641fc"
+    }
+  ]
+}

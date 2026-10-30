@@ -1,0 +1,20 @@
+.ails-markdown-viewer code:not(pre code):not(.math-inline):not(.math-display) {
+  display: inline;
+  padding: 0.08em 0.32em;
+  border: 1px solid var(--border);
+  border-radius: 0.3em;
+  background: var(--muted);
+  color: var(--foreground);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+  font-weight: 400;
+  white-space: break-spaces;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.ails-markdown-viewer code:not(pre code):not(.math-inline):not(.math-display)::before,
+.ails-markdown-viewer code:not(pre code):not(.math-inline):not(.math-display)::after {
+  content: none;
+}

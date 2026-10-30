@@ -1,0 +1,13 @@
+.ails-processbar-texture [data-tab-reordering] > [data-ails-processbar-tab] {
+  will-change: transform;
+}
+
+.ails-processbar-texture [data-tab-reordering] > [data-tab-dragged] {
+  z-index: 2;
+  cursor: grabbing;
+}
+
+.ails-processbar-texture [data-tab-reordering] :is([data-tab-close], [data-tab-split], [data-tab-unsplit]) {
+  pointer-events: none;
+  opacity: 0;
+}

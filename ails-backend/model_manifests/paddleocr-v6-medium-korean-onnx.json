@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "model_id": "paddleocr-v6-medium-korean-onnx",
+  "version": "1.0.0",
+  "purpose": "Korean PDF OCR text detection and recognition",
+  "license": "Apache-2.0",
+  "file_size": 75548549,
+  "download_urls": [
+    "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx",
+    "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx"
+  ],
+  "required_files": [
+    "detector/inference.onnx",
+    "detector/inference.yml",
+    "recognizer/inference.onnx",
+    "recognizer/inference.yml"
+  ],
+  "files": [
+    {
+      "path": "detector/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx/resolve/61323801669c338b7891481ec7bac61ce31b576a/inference.onnx",
+      "size": 62032837,
+      "sha256": "eb13b44b25bb36f89528b68720af8a61d9cf381176107f465db1757b65d086e1"
+    },
+    {
+      "path": "detector/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx/resolve/61323801669c338b7891481ec7bac61ce31b576a/inference.yml",
+      "size": 886,
+      "sha256": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871"
+    },
+    {
+      "path": "recognizer/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx/resolve/5c6f574b8e2230adf4287b33e736d71b9fabd28e/inference.onnx",
+      "size": 13418787,
+      "sha256": "92f0b7785e64fc9090106a241cf4c1eb97472824558272751b88a2a4476d3a08"
+    },
+    {
+      "path": "recognizer/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx/resolve/5c6f574b8e2230adf4287b33e736d71b9fabd28e/inference.yml",
+      "size": 96039,
+      "sha256": "f757fa1c40e99edcf27e9cce879b93eb2a51fa46f5ef39095689b8c37dd75998"
+    }
+  ]
+}

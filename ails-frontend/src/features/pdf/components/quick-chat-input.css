@@ -1,0 +1,8 @@
+[data-ails-question-reader] {
+  caret-color: transparent;
+  outline: none;
+}
+
+[data-ails-question-reader] :is(input, textarea, [contenteditable="true"], [role="textbox"]) {
+  caret-color: auto;
+}

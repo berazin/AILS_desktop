@@ -1,0 +1,52 @@
+--- a/AILS_desktop/native/paperback-document-model/vendor/paperback-core/src/parser/rtf.rs
++++ b/AILS_desktop/native/paperback-document-model/vendor/paperback-core/src/parser/rtf.rs
+@@ -459,7 +459,8 @@
+ #[allow(clippy::too_many_lines)]
+ fn extract_content_from_tokens(tokens: &[Token]) -> DocumentBuffer {
+ 	let mut buffer = DocumentBuffer::new();
+-	let mut in_header = true;
++	// Paragraph reset is optional; named metadata destinations are skipped below.
++	let mut in_header = false;
+ 	let mut pending_high_surrogate: Option<u16> = None;
+ 	let mut pending_link: Option<PendingLink> = None;
+ 	let mut depth: i32 = 0;
+@@ -517,6 +518,17 @@
+ 		if skip_until_depth.is_some() {
+ 			continue;
+ 		}
++        // RTF body text can start without \pard. Exclude header destinations by
++        // their group, instead of discarding every token until that control word.
++        let metadata_group = matches!(token, Token::ControlSymbol((
++            ControlWord::FontTable | ControlWord::ColorTable | ControlWord::FileTable | ControlWord::StyleSheet, _
++        ))) || matches!(token, Token::ControlSymbol((ControlWord::Unknown(name), _))
++            if matches!(*name, r"\info" | r"\generator" | r"\listtable" | r"\listoverridetable"
++                | r"\revtbl" | r"\rsidtbl" | r"\xmlnstbl" | r"\latentstyles"));
++        if depth > 1 && metadata_group {
++            skip_until_depth = Some(depth - 1);
++            continue;
++        }
+ 		match token {
+ 			Token::ControlSymbol((ctrl, property)) => {
+ 				match ctrl {
+@@ -703,6 +715,21 @@
+ 	};
+ 	use crate::document::MarkerType;
+ 
++
++    #[test]
++    fn body_without_paragraph_reset_is_not_discarded() {
++        for (rtf, expected) in [
++            (r"{\rtf1\ansi AILS document\par Readable body 42.}", "AILS document\nReadable body 42."),
++            (r"{\rtf1\ansi\deff0{\fonttbl{\f0 Arial;}}{\info{\title Hidden metadata}}\f0\fs24 AILS document\par Readable body 42.}", "AILS document\nReadable body 42."),
++            (r"{\rtf1\ansi{\b Bold body} plain}", "Bold body plain"),
++        ] {
++            let normalized = normalize_escapes(rtf, encoding_rs::WINDOWS_1252, &HashMap::new());
++            let tokens = Lexer::scan(&normalized).unwrap();
++            let buffer = extract_content_from_tokens(&tokens);
++            assert_eq!(buffer.content, expected);
++        }
++    }
++
+ 	fn enc_name(enc: &'static Encoding) -> &'static str {
+ 		enc.name()
+ 	}

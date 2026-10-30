@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "component_id": "opencv-ffmpeg-bridge",
+  "approved_for_commercial_redistribution": true,
+  "reviewed_by": "AILS operator (local session)",
+  "reviewed_at": "2026-08-26T14:50:04.303081Z",
+  "approval_scope": "OpenCV videoio FFmpeg bridge DLL (opencv_videoio_ffmpeg4100_64.dll) bundled for PDF OCR video frame extraction.",
+  "version": "4.10.0",
+  "license_expression": "MIT",
+  "source_url": "https://github.com/opencv/opencv-python",
+  "license_files": [
+    "audit/opencv-ffmpeg-runtime/LICENSE.txt",
+    "audit/opencv-ffmpeg-runtime/LICENSE-3RD-PARTY.txt"
+  ],
+  "files": {
+    "cv2/opencv_videoio_ffmpeg4100_64.dll": {
+      "sha256": "3de83b84588b3ee8bacdbea85a8f92d4855a32a1108183963315a7db06ad5744",
+      "license_expression": "MIT",
+      "source_url": "https://github.com/opencv/opencv-python",
+      "license_files": [
+        "audit/opencv-ffmpeg-runtime/LICENSE.txt",
+        "audit/opencv-ffmpeg-runtime/LICENSE-3RD-PARTY.txt"
+      ]
+    }
+  }
+}

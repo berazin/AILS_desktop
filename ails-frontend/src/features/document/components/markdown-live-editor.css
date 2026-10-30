@@ -1,0 +1,26 @@
+.ails-markdown-live-editor .monaco-editor,
+.ails-markdown-live-editor .monaco-editor-background,
+.ails-markdown-live-editor .margin {
+  background: transparent !important;
+}
+.ails-markdown-live-editor .view-line,
+.ails-markdown-live-editor .view-line span {
+  color: var(--foreground) !important;
+}
+.ails-markdown-live-editor .cursor {
+  background: var(--foreground) !important;
+}
+.ails-markdown-live-editor .monaco-editor,
+.ails-markdown-live-editor .monaco-editor textarea {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+.ails-markdown-live-preview {
+  padding-bottom: 12px;
+  white-space: normal;
+  font-family: var(--font-sans, sans-serif);
+}
+.ails-markdown-live-preview .prose > :first-child { margin-top: 0; }
+.ails-markdown-live-preview .prose > :last-child { margin-bottom: 0; }
+.ails-markdown-live-editor .view-zones { z-index: 3; }

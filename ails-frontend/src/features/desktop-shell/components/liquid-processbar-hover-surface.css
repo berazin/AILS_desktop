@@ -1,0 +1,45 @@
+[data-liquid-processbar-hover] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+[data-liquid-processbar-hover] > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+[data-ails-processbar-actions],
+[data-ails-window-controls] {
+  position: relative;
+  z-index: auto;
+}
+
+:where([data-ails-processbar-actions], [data-ails-window-controls]) button:where(:not([data-ails-document-popover] *)),
+button[data-ails-processbar-hover-button] {
+  position: relative;
+  z-index: 1;
+}
+
+.ails-processbar-texture :is(button, [data-tab-id][data-active="false"])[data-liquid-hover-target] {
+  background-color: transparent !important;
+}
+
+.ails-processbar-texture button[data-liquid-hover-target]:active {
+  scale: none !important;
+  transform: none !important;
+}
+
+.ails-processbar-texture[data-ails-processbar] :is(button, [data-tab-id][data-active="false"], [data-split-tab-group][data-active="false"])[data-liquid-hover-ink] {
+  background-color: transparent !important;
+  mix-blend-mode: difference;
+}
+
+.ails-processbar-texture[data-ails-processbar] :is(button, [data-tab-id][data-active="false"], [data-split-tab-group][data-active="false"])[data-liquid-hover-ink],
+.ails-processbar-texture[data-ails-processbar] :is(button, [data-tab-id][data-active="false"], [data-split-tab-group][data-active="false"])[data-liquid-hover-ink] :is(svg, svg *, span) {
+  color: #ffffff !important;
+}

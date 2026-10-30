@@ -1,0 +1,33 @@
+{
+  "sourceCommit": "805902fbfcd7c3837ffcf077ad1b2f1cd497dca7",
+  "patch": "audit/rtf-body-start.patch",
+  "patchSha256": "a29f73937f19f5b27cf650a622d51b8bb0c22379c89c518ebd1e020fff3b1cc2",
+  "executable": "tools/paperback/ails-paperback-prototype.exe",
+  "executableSha256": "8bbd7f6c75683a454c94acfd760b1106215b0536528c84ccedcb08e3caea3c50",
+  "rustTests": {
+    "passed": 523,
+    "failed": 0,
+    "command": "cargo test --locked --offline --workspace --no-default-features"
+  },
+  "releaseCommand": "cargo build --release --locked --offline --no-default-features --bin ails-paperback-prototype",
+  "license": {
+    "packages": 177,
+    "errors": []
+  },
+  "adapterChecks": [
+    "body without pard",
+    "metadata exclusion",
+    "Korean Unicode",
+    "stale empty RTF cache rejected",
+    "current cache reused",
+    "other format cache unchanged"
+  ],
+  "electronChecks": [
+    "both body paragraphs visible",
+    "second external file uses same window",
+    "same Python process tree",
+    "RTF tab return",
+    "normal exit code 0"
+  ],
+  "startupWithinOneSecond": "not verified for corrected RTF"
+}

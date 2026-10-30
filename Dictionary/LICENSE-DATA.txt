@@ -1,0 +1,16 @@
+# 우리말샘 사전 데이터 라이선스
+
+본 데이터(words.txt)는 국립국어원 「우리말샘」의 사전 데이터를 기반으로 가공되었습니다.
+
+- **원저작물:** 우리말샘
+- **출처:** 국립국어원 (https://opendict.korean.go.kr/)
+- **라이선스:** Creative Commons Attribution-ShareAlike 2.0 Korea (CC BY-SA 2.0 KR)
+- **라이선스 전문:** https://creativecommons.org/licenses/by-sa/2.0/kr/
+
+**가공 내용**
+- 사전 표제어 추출
+- 표제어의 하이픈(-) 제거 및 캐럿(^)을 공백으로 변환
+- 일부 문법 요소, 방언 등 불필요한 항목 필터링
+- 중복 표제어 제거
+
+본 가공 데이터는 원저작물의 CC BY-SA 2.0 KR 라이선스 조건에 따라 배포됩니다.

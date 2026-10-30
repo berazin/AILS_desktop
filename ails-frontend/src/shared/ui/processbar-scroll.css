@@ -1,0 +1,135 @@
+@property --ails-scrollbar-thumb-inset {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 3px;
+}
+
+/* All native scroll owners share the workspace paint, including portals,
+   textareas and horizontal code/table output. Reset tokens per element so a
+   nearby outer scrollbar never expands an unrelated nested scrollbar. */
+:where(*) {
+  --ails-scrollbar-thumb: color-mix(in srgb, var(--foreground) 10.5%, transparent);
+  --ails-scrollbar-thumb-inset: 3px;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+
+[data-ails-scrollbar-near] {
+  --ails-scrollbar-thumb: color-mix(in srgb, var(--foreground) 50%, transparent);
+  --ails-scrollbar-thumb-inset: 0px;
+}
+
+:where(*)::-webkit-scrollbar {
+  width: 8.5px;
+  height: 8.5px;
+}
+
+:where(*)::-webkit-scrollbar-track,
+:where(*)::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+:where(*)::-webkit-scrollbar-button {
+  display: none;
+}
+
+:where(*)::-webkit-scrollbar-thumb {
+  border: var(--ails-scrollbar-thumb-inset) solid transparent;
+  border-radius: 999px;
+  background-color: var(--ails-scrollbar-thumb);
+  background-clip: padding-box;
+}
+
+:where(*)::-webkit-scrollbar-thumb:hover,
+:where(*)::-webkit-scrollbar-thumb:active {
+  background-color: color-mix(in srgb, var(--foreground) 75%, transparent);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  :where(*) {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--foreground) 30%, transparent) transparent;
+  }
+
+  [data-ails-scrollbar-near] {
+    scrollbar-color: color-mix(in srgb, var(--foreground) 50%, transparent) transparent;
+  }
+}
+
+/* Monaco keeps its own virtual scroll model and hit testing. Its sliders and
+   the title bar's overlay use the same paint without adding a second gutter. */
+.monaco-scrollable-element > .scrollbar,
+.monaco-scrollable-element > .scrollbar > .slider,
+[data-ails-scrollbar-overlay] > div,
+[data-ails-scrollbar-overlay] > div::before {
+  --ails-scrollbar-thumb: inherit;
+  --ails-scrollbar-thumb-inset: inherit;
+}
+
+.monaco-scrollable-element > .scrollbar {
+  background: transparent !important;
+}
+
+.monaco-scrollable-element > .scrollbar.vertical > .slider {
+  width: calc(100% - 0.5px) !important;
+  left: auto !important;
+  right: 0;
+}
+
+.monaco-scrollable-element > .scrollbar.horizontal > .slider {
+  height: calc(100% - 0.5px) !important;
+  top: auto !important;
+  bottom: 0;
+}
+
+.monaco-scrollable-element > .scrollbar > .slider,
+[data-ails-scrollbar-overlay] > div::before {
+  box-sizing: border-box;
+  border: var(--ails-scrollbar-thumb-inset) solid transparent;
+  border-radius: 999px;
+  background-color: var(--ails-scrollbar-thumb) !important;
+  background-clip: padding-box !important;
+}
+
+.monaco-scrollable-element > .scrollbar > .slider:hover,
+.monaco-scrollable-element > .scrollbar > .slider.active,
+[data-ails-scrollbar-overlay] > div:hover::before,
+[data-ails-scrollbar-overlay][data-dragging="true"] > div::before {
+  background-color: color-mix(in srgb, var(--foreground) 75%, transparent) !important;
+}
+
+[data-ails-scrollbar-overlay] {
+  height: 8.5px;
+}
+
+/* Keep the title bar's grab strip aligned with its thin resting thumb. The
+   expanding paint must not intercept clicks/drags on the tab body beneath it. */
+[data-ails-scrollbar-overlay] > div {
+  position: relative;
+  height: 2.5px;
+  margin-top: 3px;
+}
+
+[data-ails-scrollbar-overlay] > div::before {
+  content: "";
+  position: absolute;
+  inset: -3px 0 auto;
+  height: 8.5px;
+  pointer-events: none;
+}
+
+[data-ails-scrollbar-overlay][data-dragging="true"] {
+  --ails-scrollbar-thumb-inset: 0px;
+}
+
+@layer base {
+  :where(.ails-processbar-scroll, [data-ails-scrollbar]) {
+    transition: --ails-scrollbar-thumb-inset 280ms ease-in-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :where(.ails-processbar-scroll, [data-ails-scrollbar]) {
+      transition: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.ails-tab-hover-preview {
+  position: fixed; left: 0; top: 0; z-index: 150; overflow: hidden; pointer-events: none;
+  border: 1px solid var(--border); border-radius: 14px;
+  color: var(--foreground); background: var(--background);
+  box-shadow: 0 10px 28px #10182826;
+  -webkit-app-region: no-drag;
+  transition: transform 200ms cubic-bezier(.2, .8, .2, 1);
+  will-change: transform;
+}
+.ails-tab-hover-preview-layer { position: relative; background: var(--background); }
+.ails-tab-hover-preview-layer + .ails-tab-hover-preview-layer { position: absolute; inset: 0; }
+.ails-tab-hover-preview-enter { animation: ails-tab-preview-fade 160ms ease-out both; }
+@keyframes ails-tab-preview-fade { from { opacity: 0; } to { opacity: 1; } }
+.ails-tab-hover-preview-image { position: relative; overflow: hidden; background: var(--panel); }
+.ails-tab-hover-preview-image img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.ails-tab-hover-preview-empty { display: flex; height: 100%; align-items: center; justify-content: center; flex-direction: column; gap: 10px; color: var(--muted-foreground); font-size: 12px; }
+.ails-tab-hover-preview-title { height: 44px; overflow: hidden; padding: 12px 14px; white-space: nowrap; text-overflow: ellipsis; font-size: 13px; line-height: 20px; }
+@media (prefers-reduced-motion: reduce) {
+  .ails-tab-hover-preview { transition: none; will-change: auto; }
+  .ails-tab-hover-preview-enter { animation: none; }
+  .ails-tab-hover-preview-layer[data-tab-preview-current="false"] { visibility: hidden; }
+}

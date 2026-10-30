@@ -1,0 +1,32 @@
+.ails-pdfjs-text-layer {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  line-height: 1;
+  text-align: initial;
+  transform-origin: 0 0;
+  user-select: text;
+  --min-font-size: 1;
+  --min-font-size-inv: 1;
+  --text-scale-factor: var(--total-scale-factor);
+}
+
+.ails-pdfjs-text-layer :is(span, br) {
+  position: absolute;
+  color: transparent;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0 0;
+}
+
+.ails-pdfjs-text-layer > :not(.markedContent),
+.ails-pdfjs-text-layer .markedContent span:not(.markedContent) {
+  --font-height: 0;
+  --scale-x: 1;
+  --rotate: 0deg;
+  font-size: calc(var(--text-scale-factor) * var(--font-height));
+  transform: rotate(var(--rotate)) scaleX(var(--scale-x));
+}
+
+.ails-pdfjs-text-layer .markedContent { display: contents; }
+.ails-pdfjs-text-layer ::selection { background: rgb(0 100 255 / 25%); }

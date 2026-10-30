@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "component_id": "paddleocr-models",
+  "approved_for_commercial_redistribution": true,
+  "reviewed_by": "AILS operator (local session)",
+  "reviewed_at": "2026-08-26T14:50:04.304506Z",
+  "approval_scope": "PaddleOCR v6 Korean ONNX models (tiny/small/medium) for on-device OCR text recognition.",
+  "version": "6.0.0",
+  "license_expression": "Apache-2.0",
+  "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+  "license_files": [
+    "audit/paddleocr-models/LICENSE.txt"
+  ],
+  "files": {
+    "models/paddleocr-v6-tiny-korean-onnx/1.0.0/manifest.json": {
+      "sha256": "46fdffd2c0df1dc74e9bca31c8cd6faaa8fc085c967648c5bb43bf026029dd12",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-tiny-korean-onnx/1.0.0/detector/inference.onnx": {
+      "sha256": "193bab7a04fca699a6c82e6abb5b81bdb28177f0abd4062552b04908dafb19f8",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-tiny-korean-onnx/1.0.0/detector/inference.yml": {
+      "sha256": "3ac018be6f97499a08faa3bbdeb33640968d9307f6736d152902747a9f259593",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-tiny-korean-onnx/1.0.0/recognizer/inference.onnx": {
+      "sha256": "92f0b7785e64fc9090106a241cf4c1eb97472824558272751b88a2a4476d3a08",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-tiny-korean-onnx/1.0.0/recognizer/inference.yml": {
+      "sha256": "f757fa1c40e99edcf27e9cce879b93eb2a51fa46f5ef39095689b8c37dd75998",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-small-korean-onnx/1.0.0/manifest.json": {
+      "sha256": "fc72c0734abec99ac1c0f11ffd73e1a0831273989d17c3417c6656660c6c1de5",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-small-korean-onnx/1.0.0/detector/inference.onnx": {
+      "sha256": "d73e0058b7a8086bbd57f3d10b8bcd4ff95363f67e06e2762b5e814fe9c9410e",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-small-korean-onnx/1.0.0/detector/inference.pnnxsim.onnx": {
+      "sha256": "9a9a6a0efc6143561816cc181fa22c91f5ad4dd9209b24ecc99316657644eb45",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-small-korean-onnx/1.0.0/detector/inference.yml": {
+      "sha256": "193f435274bf9f0b5f71a929bbfbcf148282df7e633b34e7c373e8f44741b516",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-small-korean-onnx/1.0.0/recognizer/inference.onnx": {
+      "sha256": "92f0b7785e64fc9090106a241cf4c1eb97472824558272751b88a2a4476d3a08",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-small-korean-onnx/1.0.0/recognizer/inference.pnnxsim.onnx": {
+      "sha256": "660b43e0ac38ae1d7d344486cfcc99aba9127a9a06aad8edb19955b2ccce0d45",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-small-korean-onnx/1.0.0/recognizer/inference.yml": {
+      "sha256": "f757fa1c40e99edcf27e9cce879b93eb2a51fa46f5ef39095689b8c37dd75998",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-medium-korean-onnx/1.0.0/manifest.json": {
+      "sha256": "7bddbf68218f3cca3049361695d4e8cd0b588b884619b36f92ea682689018456",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-medium-korean-onnx/1.0.0/detector/inference.onnx": {
+      "sha256": "eb13b44b25bb36f89528b68720af8a61d9cf381176107f465db1757b65d086e1",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-medium-korean-onnx/1.0.0/detector/inference.yml": {
+      "sha256": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-medium-korean-onnx/1.0.0/recognizer/inference.onnx": {
+      "sha256": "92f0b7785e64fc9090106a241cf4c1eb97472824558272751b88a2a4476d3a08",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    },
+    "models/paddleocr-v6-medium-korean-onnx/1.0.0/recognizer/inference.yml": {
+      "sha256": "f757fa1c40e99edcf27e9cce879b93eb2a51fa46f5ef39095689b8c37dd75998",
+      "license_expression": "Apache-2.0",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "license_files": [
+        "audit/paddleocr-models/LICENSE.txt"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+::highlight(ails-document-find) {
+  background-color: #facc1559;
+}
+
+::highlight(ails-document-find-current) {
+  background-color: #f59e0b;
+  color: #171717;
+}

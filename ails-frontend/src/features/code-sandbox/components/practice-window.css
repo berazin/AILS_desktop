@@ -1,0 +1,67 @@
+.ails-practice-window { box-shadow: none; }
+
+.ails-practice-window-toolbar {
+  position: relative;
+  display: flex;
+  min-height: 36px;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--foreground);
+  font-size: 12px;
+  container-type: inline-size;
+}
+
+.ails-practice-window-toolbar .ails-code-toolbar-controls { flex-wrap: nowrap; gap: 4px; }
+.ails-practice-window-toolbar .code-sandbox-button,
+.ails-practice-study-toolbar .code-sandbox-button {
+  width: auto;
+  min-width: 28px;
+  padding: 0 8px;
+  border-color: transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--foreground);
+  font-weight: 500;
+}
+.ails-practice-window-toolbar .code-sandbox-button:hover:not(:disabled),
+.ails-practice-study-toolbar .code-sandbox-button:hover:not(:disabled) { background: var(--muted); border-color: transparent; }
+.ails-practice-study-toolbar .code-sandbox-button-accent { background: var(--brand); color: white; }
+.ails-practice-study-toolbar .code-sandbox-button-accent:hover:not(:disabled) { background: var(--brand); filter: brightness(1.08); }
+
+.ails-practice-study-toolbar { container-type: inline-size; }
+.ails-practice-actions-menu {
+  position: fixed;
+  z-index: 180;
+  width: 260px;
+  max-width: calc(100vw - 32px);
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--foreground);
+  box-shadow: 0 8px 24px #0002;
+}
+.ails-practice-actions-menu .code-sandbox-button { width: 100%; height: 32px; justify-content: flex-start; border: 0; background: transparent; color: var(--foreground); font-weight: 500; }
+.ails-practice-actions-menu > div { width: 100%; }
+.ails-practice-actions-menu > button { width: 100%; min-height: 32px; justify-content: flex-start; border: 0; background: transparent; color: var(--foreground); font-size: 12px; text-align: left; }
+.ails-practice-actions-menu > button:hover:not(:disabled) { background: var(--muted); }
+.ails-practice-window [data-practice-answer-panel] { background: var(--panel); }
+.ails-practice-window .ails-code-sidebar-panel { background: var(--background); }
+.ails-practice-window [data-practice-answer-panel] section { border-color: var(--border); background-color: var(--background); }
+
+@container (max-width: 1100px) {
+  .ails-practice-study-toolbar [data-practice-round-history] summary > span { display: none; }
+  .ails-practice-window-toolbar .code-sandbox-button > span { display: none; }
+  .ails-practice-study-toolbar [data-problem-toolbar-actions] > .code-sandbox-button:not([data-current-problem-grading-button]) > span { display: none; }
+  .ails-practice-study-toolbar [data-problem-study-meta] { display: none; }
+}
+
+/* Keep status and answer-key controls on separate rows in narrow study panes. */
+@container (max-width: 1100px) {
+  [data-practice-toolbar-grid] { grid-template-columns: minmax(0, 1fr); }
+  [data-problem-toolbar-actions] { flex-wrap: wrap; justify-content: flex-start; }
+}

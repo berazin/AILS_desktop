@@ -1,0 +1,902 @@
+@import "tailwindcss" source(".");
+@import "./shared/ui/processbar-scroll.css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --background: #f7f9fc;
+  --foreground: #172033;
+  --muted: #edf2f7;
+  --muted-foreground: #64748b;
+  --border: #dbe4ef;
+  --panel: #fbfdff;
+  --processbar-active-background: var(--panel);
+  --processbar-active-foreground: var(--foreground);
+  --sidebar: #4d5869;
+  --brand: #ff5c33;
+  --brand-soft: #fff0eb;
+  --brand-foreground: #ffffff;
+  --interactive-hover: #e8eef6;
+  --interactive-hover-strong: #dce7f3;
+  --brand-hover: color-mix(in srgb, var(--brand) 90%, #172033);
+  --danger-hover: #b91c1c;
+  --retry-button-bg: #f8fbff;
+  --retry-button-hover: #ffffff;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0f0f10;
+  --foreground: #f4f4f5;
+  --muted: #1d1d20;
+  --muted-foreground: #a1a1aa;
+  --border: #2a2a2e;
+  --panel: #141416;
+  --sidebar: #18181b;
+  --brand-soft: color-mix(in srgb, var(--brand) 18%, transparent);
+  --interactive-hover: #2a2a2e;
+  --interactive-hover-strong: #34343a;
+  --brand-hover: color-mix(in srgb, var(--brand) 84%, white);
+  --danger-hover: #dc2626;
+  --retry-button-bg: #1d1d20;
+  --retry-button-hover: #2a2a2e;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  /* Panels own scrolling; overflowing portals must not move the process bar. */
+  overflow: clip;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.desktop-drag-region {
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.desktop-drag-region * {
+  -webkit-app-region: inherit;
+}
+
+.desktop-drag-region button,
+.desktop-drag-region input,
+.desktop-drag-region select,
+.desktop-drag-region textarea,
+.desktop-drag-region [role="button"],
+.desktop-drag-region [data-ails-processbar-tab],
+.desktop-drag-region [data-ails-document-popover],
+.desktop-drag-region [data-ails-voice-error],
+.desktop-drag-region [style*="no-drag"] {
+  -webkit-app-region: no-drag;
+}
+
+[data-ails-code-sandbox="true"],
+[data-ails-code-sandbox="true"] * {
+  -webkit-app-region: no-drag;
+}
+
+/* 레이어 밖에 두면 Tailwind 유틸리티(@layer utilities)보다 항상 우선해 버튼의 글씨 크기·굵기 클래스가 무시된다. */
+@layer base {
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+button:focus,
+button:focus-visible,
+[role="button"]:focus,
+[role="button"]:focus-visible,
+.ails-button:focus,
+.ails-button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button,
+[role="button"] {
+  cursor: default;
+}
+
+button[class],
+button[class]:hover,
+button[class]:active,
+[role="button"][class],
+[role="button"][class]:hover,
+[role="button"][class]:active {
+  cursor: default;
+}
+
+button:disabled,
+[role="button"][aria-disabled="true"] {
+  cursor: default;
+}
+
+button:where(:not(:disabled):not(.ails-button-brand):not(.ails-button-danger):not([data-ails-color-button="true"]):not([data-ails-global-home-button="true"])):hover {
+  background-color: var(--interactive-hover);
+}
+
+.ails-pdf-overlay-surface {
+  background-color: color-mix(in srgb, var(--panel) 5%, transparent);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  opacity: 0.3;
+  transition: background-color 150ms ease, opacity 150ms ease;
+}
+
+.ails-pdf-overlay-surface:hover,
+.ails-pdf-overlay-surface:focus,
+.ails-pdf-overlay-surface:focus-within {
+  background-color: var(--panel);
+  opacity: 1;
+}
+
+.ails-button-neutral:not(:disabled):hover {
+  background-color: var(--interactive-hover);
+}
+
+.ails-button-brand:not(:disabled):hover {
+  background-color: var(--brand-hover);
+}
+
+.ails-button-danger:not(:disabled):hover {
+  background-color: var(--danger-hover);
+}
+
+button.bg-red-600:not(:disabled):hover,
+button.bg-red-700:not(:disabled):hover {
+  background-color: var(--danger-hover);
+  color: #ffffff;
+}
+
+button.text-red-600:not(:disabled):not(.bg-red-600):not(.bg-red-700):hover {
+  background-color: rgb(239 68 68 / 0.14);
+}
+
+.ails-button-send:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--brand) 86%, #ffffff);
+  box-shadow: 0 8px 18px color-mix(in srgb, var(--brand) 18%, transparent);
+}
+
+.dark .ails-button-send:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--brand) 78%, #ffffff);
+}
+
+.ails-button-retry {
+  background-color: var(--retry-button-bg);
+}
+
+.ails-button-retry:not(:disabled):hover {
+  background-color: var(--retry-button-hover);
+}
+
+.ails-collapsible-panel {
+  animation: ails-slide-fade-in 180ms ease-out both;
+}
+
+.ails-model-test-result,
+.ails-model-test-button {
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.ails-model-test-button-after-result {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px) scale(0.96);
+}
+
+.ails-model-test-control:hover .ails-model-test-result {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px) scale(0.96);
+}
+
+.ails-model-test-control:hover .ails-model-test-button-after-result {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.code-sandbox-button {
+  display: inline-flex;
+  height: 28px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--muted);
+  background-image: none;
+  padding: 0 10px;
+  color: var(--foreground);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+.ails-code-toolbar-controls {
+  z-index: 110;
+  pointer-events: auto;
+}
+
+.code-sandbox-button:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--brand) 35%, var(--border));
+  background-color: var(--interactive-hover);
+  color: var(--foreground);
+}
+
+.code-sandbox-button > svg,
+.code-sandbox-button > span {
+  flex: 0 0 auto;
+  pointer-events: none;
+}
+
+.code-sandbox-button-active,
+.code-sandbox-button-brand {
+  border-color: color-mix(in srgb, var(--brand) 70%, white 12%);
+  background-color: var(--brand);
+  color: #ffffff;
+}
+
+.code-sandbox-button-active:hover:not(:disabled),
+.code-sandbox-button-brand:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--brand) 82%, white 18%);
+  background-color: var(--brand-hover);
+  color: #ffffff;
+}
+
+.code-sandbox-button-primary {
+  border-color: color-mix(in srgb, var(--brand) 70%, white 12%);
+  background-color: var(--brand);
+  color: var(--brand-foreground);
+}
+
+.code-sandbox-button-primary:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--brand) 82%, white 18%);
+  background-color: var(--brand-hover);
+  color: var(--brand-foreground);
+}
+
+.code-sandbox-button-danger {
+  border-color: color-mix(in srgb, #fca5a5 44%, transparent);
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.code-sandbox-button-danger:hover:not(:disabled) {
+  border-color: color-mix(in srgb, #fecaca 62%, transparent);
+  background-color: #b91c1c;
+  color: #ffffff;
+}
+
+.code-sandbox-button-accent {
+  border-color: color-mix(in srgb, var(--brand) 70%, white 12%);
+  background-color: var(--brand);
+  color: #ffffff;
+}
+
+.code-sandbox-button-accent:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--brand) 82%, white 18%);
+  background-color: var(--brand-hover);
+  color: #ffffff;
+}
+
+.code-sandbox-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.profile-input {
+  height: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  background: var(--background);
+  padding: 0 0.5rem;
+  color: var(--foreground);
+  font-size: 0.75rem;
+  outline: none;
+}
+
+.profile-textarea {
+  resize: vertical;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  background: var(--background);
+  padding: 0.5rem;
+  color: var(--foreground);
+  font-family: "Fira Code", Consolas, Monaco, monospace;
+  font-size: 0.75rem;
+  outline: none;
+}
+
+.profile-input:focus,
+.profile-textarea:focus {
+  border-color: var(--brand);
+}
+
+.ails-code-settings-content {
+  font-size: var(--ails-code-settings-font-size, 12px);
+}
+
+.ails-code-settings-content .text-\[8px\] {
+  font-size: calc(8px + var(--ails-code-settings-font-delta, 2px)) !important;
+}
+
+.ails-code-settings-content .text-\[9px\] {
+  font-size: calc(9px + var(--ails-code-settings-font-delta, 2px)) !important;
+}
+
+.ails-code-settings-content .text-\[10px\] {
+  font-size: calc(10px + var(--ails-code-settings-font-delta, 2px)) !important;
+}
+
+.ails-code-settings-content .text-\[11px\] {
+  font-size: calc(11px + var(--ails-code-settings-font-delta, 2px)) !important;
+}
+
+.ails-code-settings-content .text-xs,
+.ails-code-settings-content .profile-input,
+.ails-code-settings-content .profile-textarea {
+  font-size: calc(12px + var(--ails-code-settings-font-delta, 2px)) !important;
+}
+
+.ails-code-settings-content .text-sm {
+  font-size: calc(14px + var(--ails-code-settings-font-delta, 2px)) !important;
+}
+
+.ails-code-settings-content .text-base {
+  font-size: calc(16px + var(--ails-code-settings-font-delta, 2px)) !important;
+}
+
+.ails-code-settings-content .code-sandbox-button {
+  font-size: calc(10px + var(--ails-code-settings-font-delta, 2px));
+}
+
+[data-ails-code-sandbox="true"] .monaco-editor .find-widget .button,
+[data-ails-code-sandbox="true"] .monaco-editor .find-widget .monaco-custom-toggle {
+  cursor: pointer !important;
+  pointer-events: auto;
+}
+
+[data-ails-code-sandbox="true"] .monaco-editor .find-widget .disabled {
+  cursor: default !important;
+}
+
+body.ails-monaco-find-widget-control-hover .monaco-hover {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+@keyframes ails-slide-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ails-home-enter {
+  animation: ails-home-enter 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ails-processbar-texture {
+  /* 안개 그림 에셋: 프로세스바 배경에 사용한다.
+     생성 스크립트: scripts/dev/generate_sidebar_mist.py */
+  background-color: #1c2028;
+  background-image: url("./assets/sidebar-mist.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* 가로로 긴 프로세스바는 그림 상단부를 사용한다. */
+.ails-processbar-texture {
+  background-position: center top;
+}
+
+.ails-processbar-texture {
+  /* 안개 배경 위 칩/버튼용: bg-[var(--sidebar)]도 반투명 어두운 톤으로 덮어쓴다. */
+  --sidebar: rgba(38, 47, 60, 0.55);
+  --background: rgba(29, 37, 47, 0.4);
+  --foreground: #f5f7fa;
+  --muted: rgba(255, 255, 255, 0.1);
+  --muted-foreground: rgba(240, 244, 248, 0.72);
+  --border: rgba(255, 255, 255, 0.16);
+  --panel: rgba(38, 47, 60, 0.6);
+  --brand-soft: rgba(147, 197, 253, 0.24);
+  --interactive-hover: rgba(255, 255, 255, 0.12);
+  --interactive-hover-strong: rgba(255, 255, 255, 0.2);
+}
+
+.ails-processbar-texture :not([data-ails-document-popover], [data-ails-document-popover] *) {
+  color: rgba(255, 255, 255, 0.94) !important;
+}
+
+.ails-processbar-texture .bg-white {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.ails-processbar-texture :is([data-tab-id], [data-split-tab-group]) {
+  transition:
+    background-color 350ms ease,
+    border-color 350ms ease,
+    color 350ms ease;
+}
+
+.ails-processbar-texture [data-tab-id]:is(:focus, :focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+.ails-processbar-texture [data-tab-id] :is(span, svg, svg *) {
+  transition: color 350ms ease;
+}
+
+.ails-processbar-texture [data-active="false"] {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+[data-tab-id]:is(:hover, :focus-visible, :has(:focus-visible)):has(> :is([data-tab-split], [data-tab-unsplit], [data-tab-close])) > [data-tab-title] {
+  mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent calc(100% - 16px));
+}
+
+[data-tab-id]:is(:hover, :focus-visible, :has(:focus-visible)):has(> :is([data-tab-split], [data-tab-unsplit])):has(> [data-tab-close]) > [data-tab-title] {
+  mask-image: linear-gradient(to right, #000 calc(100% - 46px), transparent calc(100% - 38px));
+}
+
+.ails-processbar-texture [data-ails-processbar-tab][data-active="false"] + [data-ails-processbar-tab][data-active="false"]::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background-color: var(--border);
+  pointer-events: none;
+}
+
+/* 활성 탭: 뷰어 배경색을 사용해 아래 화면과 이어진다.
+   텍스처 스코프의 흰 글자 강제(!important)는 하위 요소 하나하나(svg path 포함)에
+   직접 먹히므로, 이기려면 같은 요소를 다시 찾아가는 선택자가 필요하다.
+   모서리는 공통 탭 스타일을 따르고 그림자는 사용하지 않는다. */
+.ails-processbar-texture [data-active="true"] {
+  background-color: var(--processbar-active-background) !important;
+  color: var(--processbar-active-foreground) !important;
+  border-color: transparent !important;
+  box-shadow: none;
+}
+
+.ails-processbar-texture [data-ails-processbar-tab][data-active="true"] {
+  z-index: 1;
+}
+
+/* 아래 양쪽에 오목한 곡선을 더해 탭의 옆면이 뷰어로 부드럽게 퍼진다. */
+.ails-processbar-texture [data-ails-processbar-tab][data-active="true"]::before,
+.ails-processbar-texture [data-ails-processbar-tab][data-active="true"]::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  animation: ails-processbar-tab-curve-enter 350ms ease;
+}
+
+@keyframes ails-processbar-tab-curve-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ails-processbar-texture [data-ails-processbar-tab][data-active="true"]::before {
+  left: -9px;
+  background: radial-gradient(circle at top left, transparent 7.5px, var(--processbar-active-background) 8px);
+}
+
+.ails-processbar-texture [data-ails-processbar-tab][data-active="true"]::after {
+  right: -9px;
+  background: radial-gradient(circle at top right, transparent 7.5px, var(--processbar-active-background) 8px);
+}
+
+.ails-processbar-texture [data-active="true"] span,
+.ails-processbar-texture [data-active="true"] button svg,
+.ails-processbar-texture [data-active="true"] button svg * {
+  color: var(--processbar-active-foreground) !important;
+}
+
+.ails-processbar-texture [data-active="true"] svg[data-tab-icon="home"],
+.ails-processbar-texture [data-active="true"] svg[data-tab-icon="home"] * {
+  color: var(--brand) !important;
+}
+
+.ails-processbar-texture [data-active="true"] svg[data-tab-icon="doc"],
+.ails-processbar-texture [data-active="true"] svg[data-tab-icon="doc"] * {
+  color: #2563eb !important;
+}
+
+.ails-processbar-texture [data-active="true"] svg[data-tab-icon="code"],
+.ails-processbar-texture [data-active="true"] svg[data-tab-icon="code"] * {
+  color: #d97706 !important;
+}
+
+/* 활성 탭 버튼 호버는 현재 뷰어의 글자색을 옅게 사용한다. */
+.ails-processbar-texture [data-active="true"] button:hover {
+  background-color: color-mix(in srgb, var(--processbar-active-foreground) 8%, transparent) !important;
+}
+
+/* Keep home surfaces softly squared without changing circular badges or progress bars. */
+/* 홈·대시보드 카드와 버튼은 사이드바·인스펙터와 같은 near-square 라운드를 쓴다. */
+[data-ails-home-surface="true"] .rounded-\[24px\],
+[data-ails-home-surface="true"] .rounded-2xl,
+[data-ails-dashboard-surface="true"] .rounded-\[24px\],
+[data-ails-dashboard-surface="true"] .rounded-2xl {
+  border-radius: 2px;
+}
+
+[data-ails-home-surface="true"] .rounded-xl,
+[data-ails-dashboard-surface="true"] .rounded-xl {
+  border-radius: 2px;
+}
+
+[data-ails-home-surface="true"] .rounded-lg,
+[data-ails-dashboard-surface="true"] .rounded-lg {
+  border-radius: 2px;
+}
+
+[data-ails-home-surface="true"] .rounded-md,
+[data-ails-dashboard-surface="true"] .rounded-md {
+  border-radius: 2px;
+}
+
+@keyframes ails-home-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ails-mini-dock-enter {
+  animation: ails-mini-dock-enter 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes ails-mini-dock-enter {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes ails-chatbot-stream-reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+    filter: blur(5px);
+    opacity: 0.35;
+  }
+
+  60% {
+    filter: blur(1.5px);
+    opacity: 0.88;
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.ails-chatbot-streaming-text {
+  animation: ails-chatbot-stream-reveal 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: clip-path, filter, opacity;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ails-processbar-texture :is([data-tab-id], [data-split-tab-group]),
+  .ails-processbar-texture [data-tab-id] :is(span, svg, svg *) {
+    transition: none;
+  }
+
+  .ails-processbar-texture [data-ails-processbar-tab][data-active="true"]::before,
+  .ails-processbar-texture [data-ails-processbar-tab][data-active="true"]::after {
+    animation: none;
+  }
+
+  .ails-home-enter {
+    animation: none;
+  }
+
+  .ails-chatbot-streaming-text {
+    animation: none;
+  }
+}
+
+button[data-ails-color-button="true"]:not(:disabled):hover {
+  filter: brightness(0.94) saturate(1.08);
+}
+
+.dark button[data-ails-color-button="true"]:not(:disabled):hover {
+  filter: brightness(1.16) saturate(1.08);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--brand);
+}
+
+::selection {
+  background: var(--brand-soft);
+}
+
+/* Practice mode and Monaco chrome use the same surfaces as the AILS theme. */
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) {
+  --practice-shell: var(--background);
+  --practice-panel: var(--panel);
+  --practice-editor: var(--panel);
+  --practice-sidebar: var(--sidebar);
+  --practice-border: var(--border);
+  color: var(--foreground);
+}
+
+/* Base text contrast improvements for light and dark modes */
+:root:not(.dark) :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) :where(span, div, p, pre, label):not(.monaco-editor):not(.monaco-editor *):not([class*="bg-"]):not([class*="text-"]):not(.code-sandbox-button) {
+  color: var(--foreground);
+}
+
+:root:not(.dark) :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white:not([class*="bg-[var(--brand)]"]):not([class*="bg-blue-"]):not([class*="bg-red-"]):not([class*="bg-emerald-"]):not(.code-sandbox-button-primary):not(.code-sandbox-button-danger):not(.code-sandbox-button-brand):not(.code-sandbox-button-active):not(.code-sandbox-button-accent) {
+  color: var(--foreground);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/90,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/85,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/80,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/75,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/70 {
+  color: var(--foreground);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/65,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/60,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/55,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/50,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/45,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/40 {
+  color: var(--muted-foreground);
+}
+
+/* In dark mode, avoid overly faint low-opacity whites */
+.dark :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/35,
+.dark :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/30,
+.dark :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/25,
+.dark :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/20,
+.dark :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/15 {
+  color: color-mix(in srgb, var(--foreground) 55%, transparent);
+}
+
+:root:not(.dark) :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/35,
+:root:not(.dark) :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/30,
+:root:not(.dark) :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/25,
+:root:not(.dark) :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/20,
+:root:not(.dark) :is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .text-white\/15 {
+  color: var(--muted-foreground);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .border-white\/5,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .border-white\/10,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .border-white\/15,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .border-white\/20 {
+  border-color: var(--border);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-white\/5,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-white\/10 {
+  background-color: var(--muted);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-black\/20,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-black\/25,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-black\/30,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-black\/35,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-black\/40 {
+  background-color: var(--background);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-zinc-950,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-zinc-950\/95,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .bg-zinc-900 {
+  background-color: var(--panel);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .hover\:bg-white\/5:hover,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .hover\:bg-white\/10:hover {
+  background-color: var(--interactive-hover);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .hover\:text-white:hover,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .hover\:text-white\/70:hover,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .hover\:text-white\/80:hover {
+  color: var(--foreground);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) :where(input:not([type="checkbox"]), textarea, select) {
+  border-color: var(--border);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) :where(input, textarea)::placeholder {
+  color: var(--muted-foreground);
+}
+
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .monaco-editor,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .monaco-editor-background,
+:is([data-ails-code-sandbox="true"], [data-ails-folder-editor]) .monaco-editor .margin {
+  background-color: var(--practice-editor) !important;
+}
+
+/* Vimium-style Hint Overlay */
+.ails-hint-badge {
+  position: absolute;
+  z-index: 99999;
+  background-color: #f59e0b; /* 따뜻한 Amber/Orange 톤의 힌트 */
+  color: #000000; /* 완전한 검정 글자색 */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 4px;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transform: translate(-50%, -50%) scale(1);
+  animation: ails-hint-zoom 120ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  text-shadow: none;
+  line-height: 1;
+}
+
+
+/* Vimium-style Hint Overlay */
+.ails-hint-badge {
+  position: absolute;
+  z-index: 99999;
+  background-color: #f59e0b; /* 따뜻한 Amber/Orange 톤의 힌트 */
+  color: #000000; /* 완전한 검정 글자색 */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 4px;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transform: translate(-50%, -50%) scale(1);
+  animation: ails-hint-zoom 120ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  text-shadow: none;
+  line-height: 1;
+}
+
+.dark .ails-hint-badge {
+  background-color: #fbbf24; /* 다크 모드에서는 더욱 명시적인 Yellow */
+  color: #000000;
+  border-color: #000000;
+}
+
+@keyframes ails-hint-zoom {
+  from {
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Jupyter Notebook Style Syntax Highlighting */
+.jupyter-syntax-layer {
+  color: #000000;
+}
+.jupyter-syntax-layer .token.comment {
+  color: #408080;
+  font-style: italic;
+}
+.jupyter-syntax-layer .token.keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.jupyter-syntax-layer .token.builtin,
+.jupyter-syntax-layer .token.function {
+  color: #008000;
+}
+.jupyter-syntax-layer .token.string {
+  color: #ba2121;
+}
+.jupyter-syntax-layer .token.number {
+  color: #008000;
+}
+.jupyter-syntax-layer .token.operator {
+  color: #666666;
+}
+.jupyter-syntax-layer .token.punctuation {
+  color: #000000;
+}
+
+.dark .jupyter-syntax-layer {
+  color: #d4d4d4;
+}
+.dark .jupyter-syntax-layer .token.comment {
+  color: #6a9955;
+  font-style: italic;
+}
+.dark .jupyter-syntax-layer .token.keyword {
+  color: #4ec9b0;
+  font-weight: bold;
+}
+.dark .jupyter-syntax-layer .token.builtin,
+.dark .jupyter-syntax-layer .token.function {
+  color: #dcdcaa;
+}
+.dark .jupyter-syntax-layer .token.string {
+  color: #ce9178;
+}
+.dark .jupyter-syntax-layer .token.number {
+  color: #b5cea8;
+}
+.dark .jupyter-syntax-layer .token.operator {
+  color: #d4d4d4;
+}
+.dark .jupyter-syntax-layer .token.punctuation {
+  color: #d4d4d4;
+}
+
+/* Shared review text follows the user's review font preference. */
+.ails-code-review-content :is(.text-\[9px\], .text-\[10px\], .text-\[11px\], .text-\[12px\]) {
+  font-size: var(--ails-code-review-font-size, 11px);
+}

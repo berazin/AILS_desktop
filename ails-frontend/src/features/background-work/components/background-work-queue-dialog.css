@@ -1,0 +1,17 @@
+[data-ails-background-work-queue] .ails-button-neutral {
+  color: var(--foreground);
+}
+
+[data-ails-background-work-queue] [data-work-category] {
+  border-bottom-color: transparent;
+}
+
+[data-ails-background-work-queue] [data-work-category][aria-selected="true"] {
+  border-bottom-color: var(--brand);
+  color: var(--foreground);
+}
+
+[data-ails-background-work-queue] [data-work-category]:focus-visible {
+  outline: 2px solid var(--brand) !important;
+  outline-offset: -4px;
+}

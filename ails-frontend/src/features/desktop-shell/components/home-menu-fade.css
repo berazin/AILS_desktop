@@ -1,0 +1,24 @@
+.ails-home-menu-fade {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ails-home-menu-fade[data-open="true"] {
+  opacity: 1;
+}
+
+.ails-home-menu-fade[data-open="false"] {
+  pointer-events: none;
+}
+
+@starting-style {
+  .ails-home-menu-fade[data-open="true"] {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ails-home-menu-fade {
+    transition: none;
+  }
+}

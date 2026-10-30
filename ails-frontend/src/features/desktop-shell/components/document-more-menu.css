@@ -1,0 +1,16 @@
+/* Popovers use the reading surface theme instead of the translucent title bar. */
+.ails-processbar-texture [data-ails-document-popover] {
+  --panel: var(--processbar-active-background);
+  --background: var(--processbar-active-background);
+  --foreground: var(--processbar-active-foreground);
+  --muted-foreground: color-mix(in srgb, var(--foreground) 65%, var(--panel));
+  --border: color-mix(in srgb, var(--foreground) 16%, var(--panel));
+  --muted: color-mix(in srgb, var(--foreground) 5%, var(--panel));
+  --interactive-hover: color-mix(in srgb, var(--foreground) 8%, var(--panel));
+  --brand-soft: color-mix(in srgb, var(--brand) 14%, var(--panel));
+  color-scheme: light;
+}
+
+.dark .ails-processbar-texture [data-ails-document-popover] {
+  color-scheme: dark;
+}

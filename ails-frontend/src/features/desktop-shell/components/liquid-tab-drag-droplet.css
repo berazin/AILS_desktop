@@ -1,0 +1,4 @@
+html[data-ails-tab-drag-overlay], html[data-ails-tab-drag-overlay] body, html[data-ails-tab-drag-overlay] #root {
+  width: 72px; height: 72px; min-height: 0; overflow: hidden; background: transparent !important;
+}
+.ails-liquid-tab-drag-droplet { width: 72px; height: 72px; overflow: visible; filter: drop-shadow(0 2px 3px #17203330); pointer-events: none; }

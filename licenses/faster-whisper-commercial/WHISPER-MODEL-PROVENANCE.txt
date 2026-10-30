@@ -1,0 +1,20 @@
+Whisper model redistribution evidence for AILS
+
+AILS uses a CTranslate2 conversion published by SYSTRAN. Every commercial
+approval must pin the complete Hugging Face repository ID and the full
+40-character Git revision, then bind every distributed model file to SHA-256.
+
+Reviewed repository family:
+https://huggingface.co/Systran/faster-whisper-large-v3
+
+The repository model card declares the license as MIT and states that the
+files are a CTranslate2 conversion of openai/whisper-large-v3. The original
+OpenAI Whisper repository states that its code and model weights are released
+under the MIT License:
+https://github.com/openai/whisper/blob/main/LICENSE
+https://github.com/openai/whisper/blob/main/README.md
+
+The Hugging Face license tag and conversion provenance must be rechecked for
+the exact revision recorded in model-approval.json. This file does not approve
+an unpinned model name, a moving main branch, or files downloaded after the
+approval date.

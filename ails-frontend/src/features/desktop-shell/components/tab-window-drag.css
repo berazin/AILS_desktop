@@ -1,0 +1,13 @@
+.ails-processbar-texture [data-tab-transfer-source] { display: none; }
+[data-tab-window-dragging], [data-tab-window-dragging] * { cursor: grabbing !important; }
+.ails-tab-insertion-preview {
+  position: relative; display: flex; flex-shrink: 0; align-items: center; height: 28px;
+  border: 1px solid var(--border); border-bottom: 0; border-radius: 12px 12px 0 0;
+  color: var(--foreground); background: var(--background);
+  pointer-events: none; z-index: 3;
+}
+.ails-tab-insertion-preview-item { display:flex; height:100%; align-items:center; gap:6px; padding:0 10px; font-size:12px; }
+.ails-tab-insertion-preview-item + .ails-tab-insertion-preview-item { border-left:1px solid var(--border); }
+.ails-tab-insertion-preview-title { max-width:130px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ails-tab-insertion-preview svg { flex-shrink:0; color:var(--muted-foreground); }
+.ails-tab-insertion-preview, .ails-tab-insertion-preview * { animation: none !important; transition: none !important; }

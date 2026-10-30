@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "components": [
+    {
+      "id": "pyinstaller-bootloader",
+      "display_name": "PyInstaller bootloader",
+      "paths": ["AILSBackend.exe"],
+      "license_expression": "LicenseRef-PyInstaller-Bootloader-Exception",
+      "source": "https://pyinstaller.org/en/stable/license.html",
+      "python_distribution": "pyinstaller"
+    },
+    {
+      "id": "paperback-document-parser",
+      "display_name": "Paperback document parser core",
+      "paths": ["**/tools/paperback/**"],
+      "version": "0.1.0+paperback.0e092c955271",
+      "license_expression": "MIT AND Apache-2.0 AND BSD-3-Clause AND Unicode-3.0 AND 0BSD AND ISC AND Zlib AND Unlicense",
+      "source": "https://github.com/trypsynth/paperback/commit/0e092c955271f61e29969eef6ccac21506efd7de",
+      "license_paths": [
+        "**/tools/paperback/licenses/**",
+        "**/tools/paperback/DEPENDENCIES.json"
+      ]
+    },
+    {
+      "id": "ffmpeg",
+      "display_name": "FFmpeg commercial runtime",
+      "paths": ["**/tools/ffmpeg/**"],
+      "license_expression": "UNKNOWN",
+      "license_paths": ["**/tools/ffmpeg/**"],
+      "commercial_approval_file": "tools/ffmpeg/manifest.json"
+    },
+    {
+      "id": "ctranslate2-native-runtime",
+      "display_name": "CTranslate2 native runtime",
+      "paths": ["**/ctranslate2/ctranslate2.dll", "**/ctranslate2/_ext*.pyd"],
+      "license_expression": "MIT",
+      "source": "https://github.com/OpenNMT/CTranslate2",
+      "python_distribution": "ctranslate2",
+      "commercial_blocked": true
+    },
+    {
+      "id": "nvidia-cudnn-runtime",
+      "display_name": "NVIDIA cuDNN runtime bundled by CTranslate2",
+      "paths": ["**/ctranslate2/cudnn*.dll"],
+      "license_expression": "LicenseRef-NVIDIA-cuDNN-SLA",
+      "source": "https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/windows-x86_64/",
+      "commercial_blocked": true
+    },
+    {
+      "id": "intel-openmp-runtime",
+      "display_name": "Intel OpenMP runtime bundled by CTranslate2",
+      "paths": ["**/ctranslate2/libiomp*.dll"],
+      "license_expression": "LicenseRef-Intel-Simplified-Software-License",
+      "source": "https://www.intel.com/content/www/us/en/developer/articles/license/end-user-license-agreement.html",
+      "commercial_blocked": true
+    },
+    {
+      "id": "opencv-ffmpeg-bridge",
+      "display_name": "OpenCV FFmpeg video I/O bridge",
+      "paths": ["**/cv2/opencv_videoio_ffmpeg*.dll"],
+      "license_expression": "LGPL-2.1-or-later",
+      "source": "https://github.com/opencv/opencv-python",
+      "python_distribution": "opencv-contrib-python",
+      "commercial_approval_file": "audit/opencv-ffmpeg-runtime.json"
+    },
+    {
+      "id": "onnxruntime-cuda-ocr-runtime",
+      "display_name": "ONNX Runtime CUDA OCR runtime",
+      "paths": [
+        "**/ocr-runtimes/cuda/onnxruntime/**",
+        "**/ocr-runtimes/cuda/onnxruntime_gpu-1.29.0.dist-info/**"
+      ],
+      "version": "1.29.0",
+      "license_expression": "MIT",
+      "source": "https://github.com/microsoft/onnxruntime/tree/v1.29.0",
+      "license_paths": [
+        "**/ocr-runtimes/cuda/onnxruntime/LICENSE*",
+        "**/ocr-runtimes/cuda/onnxruntime/ThirdPartyNotices*",
+        "**/ocr-runtimes/cuda/onnxruntime_gpu-1.29.0.dist-info/licenses/**"
+      ],
+      "commercial_required": true,
+      "commercial_approval_glob": "audit/ocr-runtime-commercial-approval.json"
+    },
+    {
+      "id": "onnxruntime-genai-directml-runtime",
+      "display_name": "ONNX Runtime GenAI DirectML runtime",
+      "paths": [
+        "**/onnxruntime_genai/**",
+        "**/onnxruntime_genai_directml-0.13.1.dist-info/**"
+      ],
+      "version": "0.13.1",
+      "license_expression": "MIT",
+      "source": "https://github.com/microsoft/onnxruntime-genai/tree/v0.13.1",
+      "license_paths": [
+        "**/onnxruntime_genai/LICENSE*",
+        "**/onnxruntime_genai/ThirdPartyNotices*",
+        "**/onnxruntime_genai_directml-0.13.1.dist-info/licenses/**"
+      ],
+      "commercial_blocked": true,
+      "commercial_approval_file": "audit/onnxruntime-genai-directml-runtime.json",
+      "commercial_approval_requirements": {
+        "version": "0.13.1",
+        "source_url": "https://pypi.org/project/onnxruntime-genai-directml/0.13.1/#files",
+        "file_source_url": "https://pypi.org/project/onnxruntime-genai-directml/0.13.1/#files",
+        "upstream_artifact": {
+          "filename": "onnxruntime_genai_directml-0.13.1-cp312-cp312-win_amd64.whl",
+          "sha256": "a7c6b87e8ab9fc7ab9644cc4a55358550284f72a064470904372c24501c45932",
+          "source_url": "https://pypi.org/project/onnxruntime-genai-directml/0.13.1/#files",
+          "python_tag": "cp312-cp312-win_amd64"
+        }
+      }
+    },
+    {
+      "id": "onnxruntime-directml-runtime",
+      "display_name": "ONNX Runtime DirectML runtime",
+      "paths": [
+        "**/ocr-runtimes/directml/onnxruntime/**",
+        "**/ocr-runtimes/directml/onnxruntime_directml-1.24.4.dist-info/**"
+      ],
+      "version": "1.24.4",
+      "license_expression": "MIT",
+      "source": "https://github.com/microsoft/onnxruntime/tree/v1.24.4",
+      "license_paths": [
+        "**/ocr-runtimes/directml/onnxruntime/LICENSE*",
+        "**/ocr-runtimes/directml/onnxruntime/ThirdPartyNotices*",
+        "**/ocr-runtimes/directml/onnxruntime_directml-1.24.4.dist-info/licenses/**"
+      ],
+      "commercial_required": true,
+      "commercial_approval_glob": "audit/ocr-runtime-commercial-approval.json"
+    },
+    {
+      "id": "onnxruntime-openvino-ocr-runtime",
+      "display_name": "ONNX Runtime OpenVINO OCR runtime",
+      "paths": [
+        "**/ocr-runtimes/openvino/onnxruntime/**",
+        "**/ocr-runtimes/openvino/onnxruntime_openvino-1.24.1.dist-info/**"
+      ],
+      "version": "1.24.1",
+      "license_expression": "MIT",
+      "source": "https://github.com/microsoft/onnxruntime/tree/v1.24.1",
+      "license_paths": [
+        "**/ocr-runtimes/openvino/onnxruntime/LICENSE*",
+        "**/ocr-runtimes/openvino/onnxruntime/ThirdPartyNotices*",
+        "**/ocr-runtimes/openvino/onnxruntime_openvino-1.24.1.dist-info/licenses/**"
+      ],
+      "commercial_required": true,
+      "commercial_approval_glob": "audit/ocr-runtime-commercial-approval.json"
+    },
+    {
+      "id": "openvino-ocr-runtime",
+      "display_name": "Intel OpenVINO OCR runtime",
+      "paths": [
+        "**/ocr-runtimes/openvino/openvino/**",
+        "**/ocr-runtimes/openvino/openvino-2025.4.1.dist-info/**",
+        "**/ocr-runtimes/openvino/openvino_telemetry/**",
+        "**/ocr-runtimes/openvino/openvino_telemetry-2025.2.0.dist-info/**"
+      ],
+      "version": "2025.4.1",
+      "license_expression": "Apache-2.0",
+      "source": "https://github.com/openvinotoolkit/openvino/releases/tag/2025.4.1",
+      "license_paths": [
+        "**/ocr-runtimes/openvino/openvino-2025.4.1.dist-info/licenses/**",
+        "**/ocr-runtimes/openvino/openvino_telemetry-2025.2.0.dist-info/licenses/**"
+      ],
+      "commercial_required": true,
+      "commercial_approval_glob": "audit/ocr-runtime-commercial-approval.json"
+    },
+    {
+      "id": "nvidia-cuda-ocr-runtime",
+      "display_name": "NVIDIA CUDA and cuDNN OCR runtime",
+      "paths": [
+        "**/ocr-runtimes/cuda/nvidia/**",
+        "**/ocr-runtimes/cuda/nvidia_*.dist-info/**"
+      ],
+      "version": "CUDA 13",
+      "license_expression": "LicenseRef-NVIDIA-CUDA-EULA AND LicenseRef-NVIDIA-cuDNN-SLA",
+      "source": "https://docs.nvidia.com/cuda/eula/index.html",
+      "license_paths": ["**/ocr-runtimes/cuda/nvidia_*.dist-info/licenses/**"],
+      "commercial_required": true,
+      "commercial_approval_glob": "audit/ocr-runtime-commercial-approval.json"
+    },
+    {
+      "id": "directml-whisper-model",
+      "display_name": "OpenAI Whisper DirectML FP16 multi-model bundle",
+      "paths": ["**/models/whisper-directml/**"],
+      "version": "whisper-directml-fp16-multimodel-2026-08-23",
+      "license_expression": "MIT",
+      "source": "https://github.com/openai/whisper",
+      "license_paths": ["**/audit/directml-whisper/licenses/WHISPER-MIT.txt"],
+      "commercial_blocked": true,
+      "commercial_approval_file": "audit/directml-whisper-model.json",
+      "commercial_approval_requirements": {
+        "version": "whisper-directml-fp16-multimodel-2026-08-23",
+        "source_url": "https://github.com/openai/whisper",
+        "file_source_url": "https://github.com/openai/whisper",
+        "build_provenance": {
+          "model_license_expression": "MIT",
+          "builder_distribution": "onnxruntime-genai-directml",
+          "builder_version": "0.13.1",
+          "builder_revision": "db2baa9fd17fd2865c56c7a7ba8d6ebc73a2cf7c",
+          "execution_provider": "dml",
+          "precision": "fp16",
+          "builder_command": "python -m onnxruntime_genai.models.builder -m openai/whisper-{model} -e dml -p fp16 -o models/whisper-directml/{model} --extra_options hf_token=false hf_remote=false",
+          "models": {
+            "tiny": {"source_repository": "openai/whisper-tiny", "source_revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af", "source_url": "https://huggingface.co/openai/whisper-tiny/tree/169d4a4341b33bc18d8881c4b69c2e104e1cc0af"},
+            "base": {"source_repository": "openai/whisper-base", "source_revision": "e37978b90ca9030d5170a5c07aadb050351a65bb", "source_url": "https://huggingface.co/openai/whisper-base/tree/e37978b90ca9030d5170a5c07aadb050351a65bb"},
+            "small": {"source_repository": "openai/whisper-small", "source_revision": "973afd24965f72e36ca33b3055d56a652f456b4d", "source_url": "https://huggingface.co/openai/whisper-small/tree/973afd24965f72e36ca33b3055d56a652f456b4d"},
+            "medium": {"source_repository": "openai/whisper-medium", "source_revision": "abdf7c39ab9d0397620ccaea8974cc764cd0953e", "source_url": "https://huggingface.co/openai/whisper-medium/tree/abdf7c39ab9d0397620ccaea8974cc764cd0953e"},
+            "large-v3-turbo": {"source_repository": "openai/whisper-large-v3-turbo", "source_revision": "41f01f3fe87f28c78e2fbf8b568835947dd65ed9", "source_url": "https://huggingface.co/openai/whisper-large-v3-turbo/tree/41f01f3fe87f28c78e2fbf8b568835947dd65ed9"},
+            "large-v3": {"source_repository": "openai/whisper-large-v3", "source_revision": "06f233fe06e710322aca913c1bc4249a0d71fce1", "source_url": "https://huggingface.co/openai/whisper-large-v3/tree/06f233fe06e710322aca913c1bc4249a0d71fce1"}
+          }
+        }
+      }
+    },
+    {
+      "id": "whisper-cpp-vulkan-bundle",
+      "display_name": "whisper.cpp Vulkan runtime and Whisper GGML models",
+      "paths": [
+        "**/tools/whispercpp-vulkan/**",
+        "**/models/whispercpp/**"
+      ],
+      "license_expression": "MIT AND Apache-2.0",
+      "source": "https://github.com/ggml-org/whisper.cpp",
+      "license_paths": [
+        "**/tools/whispercpp-vulkan/LICENSE*",
+        "**/audit/whisper-cpp-vulkan/licenses/**"
+      ],
+      "commercial_required": true,
+      "commercial_approval_file": "audit/whisper-cpp-vulkan-bundle.json"
+    },
+    {
+      "id": "sherpa-onnx-runtime",
+      "display_name": "sherpa-onnx streaming ASR runtime",
+      "paths": [
+        "**/sherpa_onnx/**",
+        "**/sherpa_onnx-*.dist-info/**",
+        "**/sherpa_onnx_core-*.dist-info/**"
+      ],
+      "version": "1.13.6",
+      "license_expression": "Apache-2.0",
+      "source": "https://github.com/k2-fsa/sherpa-onnx/tree/v1.13.6",
+      "python_distribution": "sherpa-onnx",
+      "commercial_required": true
+    },
+    {
+      "id": "sherpa-onnx-korean-model",
+      "display_name": "sherpa-onnx Korean Streaming Zipformer FP32 model",
+      "paths": ["**/models/sherpa-onnx-streaming-zipformer-korean-fp32/**"],
+      "version": "2024.06.16",
+      "license_expression": "Apache-2.0",
+      "source": "https://huggingface.co/k2-fsa/sherpa-onnx-streaming-zipformer-korean-2024-06-16"
+    },
+    {
+      "id": "pdfium",
+      "display_name": "pypdfium2 and PDFium third-party libraries",
+      "paths": ["**/pypdfium2_raw/**", "**/pypdfium2*.dist-info/licenses/**"],
+      "license_expression": "LicenseRef-PDFium-Third-Party",
+      "source": "https://github.com/pypdfium2-team/pypdfium2",
+      "python_distribution": "pypdfium2",
+      "license_paths": ["**/pypdfium2*.dist-info/licenses/**"]
+    },
+    {
+      "id": "paddleocr-models",
+      "display_name": "PaddleOCR model assets",
+      "paths": ["**/models/paddleocr/**", "**/paddleocr_models/**"],
+      "license_expression": "Apache-2.0",
+      "source": "https://github.com/PaddlePaddle/PaddleOCR",
+      "commercial_approval_file": "audit/paddleocr-models.json"
+    },
+    {
+      "id": "whisper-models",
+      "display_name": "Whisper speech recognition model assets",
+      "paths": ["**/models/whisper/**", "**/whisper_models/**"],
+      "license_expression": "MIT",
+      "source": "https://huggingface.co/Systran",
+      "commercial_blocked": true
+    },
+    {
+      "id": "problem-number-models",
+      "display_name": "AILS problem-number refinement models",
+      "paths": ["**/models/problem_number/*.onnx", "**/models/problem_number/*.json"],
+      "license_expression": "LicenseRef-AILS-Problem-Number-Models",
+      "source": "Trained in-house by AILS on operator-owned PDF documents; redistribution rights confirmed by the operator on 2026-08-26."
+    }
+  ]
+}

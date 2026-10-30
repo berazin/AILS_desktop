@@ -1,0 +1,1530 @@
+{
+  "description": "Copies of license and notice files tracked outside licenses/. Original source paths remain authoritative.",
+  "files": [
+    {
+      "source": "Dictionary/LICENSE-DATA.txt",
+      "copy": "licenses/collected/Dictionary/LICENSE-DATA.txt",
+      "sha256": "bea195950382458276ef34b4a1d033ed69d74f086ce45aa40d44bf4ced81f2f9"
+    },
+    {
+      "source": "ails-frontend/public/licenses/liquid-taffy/LICENSE.txt",
+      "copy": "licenses/collected/ails-frontend/public/licenses/liquid-taffy/LICENSE.txt",
+      "sha256": "f194b32c4a4ff76063ef1ca57c049ad6e6dca483aed3eb27b4807b92e7334e66"
+    },
+    {
+      "source": "ails-frontend/src/features/desktop-shell/vendor/liquid-taffy/NOTICE.md",
+      "copy": "licenses/collected/ails-frontend/src/features/desktop-shell/vendor/liquid-taffy/NOTICE.md",
+      "sha256": "c1f8e16228015264a420afedbe017c329f6ee8f44f472d73de4fd3afdc40afd7"
+    },
+    {
+      "source": "ails-frontend/src/features/office/vendor/LICENSE.canvas-docx",
+      "copy": "licenses/collected/ails-frontend/src/features/office/vendor/LICENSE.canvas-docx",
+      "sha256": "cc2467eeed02c1e35f0e5d31945045d4114642f6b7c02e33999fa437b27dfe17"
+    },
+    {
+      "source": "audit/opencv-ffmpeg-runtime/LICENSE-3RD-PARTY.txt",
+      "copy": "licenses/collected/audit/opencv-ffmpeg-runtime/LICENSE-3RD-PARTY.txt",
+      "sha256": "c1d60169b55cee56452b227c2fd2a7b9ddda3dd3741065f1c6201072be73fadb"
+    },
+    {
+      "source": "audit/opencv-ffmpeg-runtime/LICENSE.txt",
+      "copy": "licenses/collected/audit/opencv-ffmpeg-runtime/LICENSE.txt",
+      "sha256": "edef0fac1eb08d29d34563f724742e078da2513e196133a12c6ad9ff01e26107"
+    },
+    {
+      "source": "audit/paddleocr-models/LICENSE.txt",
+      "copy": "licenses/collected/audit/paddleocr-models/LICENSE.txt",
+      "sha256": "af94d2692a17ff1c5770e13cf871a1cf4ed2a33a0c268305735e899947db4346"
+    },
+    {
+      "source": "audit/whisper-cpp-vulkan/licenses/LICENSE.txt",
+      "copy": "licenses/collected/audit/whisper-cpp-vulkan/licenses/LICENSE.txt",
+      "sha256": "bcd8ec749126d45cb06737d0690295d73df4b6e7e194205bcf91190368f27285"
+    },
+    {
+      "source": "scripts/release/native-notices/MIT.txt",
+      "copy": "licenses/collected/scripts/release/native-notices/MIT.txt",
+      "sha256": "63ab717b1a0da434152ae6b8c17f6634142f79a4e7d348c3d8e4b7fca9c516c2"
+    },
+    {
+      "source": "scripts/release/native-notices/PAPERBACK-LICENSE.md",
+      "copy": "licenses/collected/scripts/release/native-notices/PAPERBACK-LICENSE.md",
+      "sha256": "5abe69b9817460d1938636cceb9cacf64c3aae9847183c1cec39de5646da64f0"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/adler2-2.0.1/1-LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/adler2-2.0.1/1-LICENSE-APACHE",
+      "sha256": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/adler2-2.0.1/2-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/adler2-2.0.1/2-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/adler2-2.0.1/LICENSE-0BSD",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/adler2-2.0.1/LICENSE-0BSD",
+      "sha256": "861399f8c21c042b110517e76dc6b63a2b334276c8cf17412fc3c8908ca8dc17"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/aes-0.8.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/aes-0.8.4/1-LICENSE-MIT",
+      "sha256": "f7e8ab639afef15573680c97f796166835cbeb3865175882fea41c60d106b733"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/aes-0.8.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/aes-0.8.4/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/aho-corasick-1.1.5/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/aho-corasick-1.1.5/1-LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/aho-corasick-1.1.5/COPYING",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/aho-corasick-1.1.5/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/anyhow-1.0.104/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/anyhow-1.0.104/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/anyhow-1.0.104/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/anyhow-1.0.104/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/base64-0.22.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/base64-0.22.1/1-LICENSE-MIT",
+      "sha256": "0dd882e53de11566d50f8e8e2d5a651bcf3fabee4987d70f306233cf39094ba7"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/base64-0.22.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/base64-0.22.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/base64-0.23.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/base64-0.23.1/1-LICENSE-MIT",
+      "sha256": "ab499c75a0f0da8e0fe83bf9ba3a27e5c39705310f07107c6c66b69958d2401c"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/base64-0.23.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/base64-0.23.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bitflags-2.13.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bitflags-2.13.1/1-LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bitflags-2.13.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bitflags-2.13.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bitvec-1.1.1/LICENSE.txt",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bitvec-1.1.1/LICENSE.txt",
+      "sha256": "411781fd38700f2357a14126d0ab048164ab881f1dcb335c1bb932e232c9a2f5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/block-buffer-0.10.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/block-buffer-0.10.4/1-LICENSE-MIT",
+      "sha256": "d5c22aa3118d240e877ad41c5d9fa232f9c77d757d4aac0c2f943afc0a95e0ef"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/block-buffer-0.10.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/block-buffer-0.10.4/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/block-buffer-0.12.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/block-buffer-0.12.1/1-LICENSE-MIT",
+      "sha256": "98181e7249d0c01737645ec982499ce99a0f07eb8f7d625b8840d799d10dbc01"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/block-buffer-0.12.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/block-buffer-0.12.1/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/block-padding-0.3.3/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/block-padding-0.3.3/1-LICENSE-MIT",
+      "sha256": "d5c22aa3118d240e877ad41c5d9fa232f9c77d757d4aac0c2f943afc0a95e0ef"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/block-padding-0.3.3/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/block-padding-0.3.3/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bumpalo-3.20.3/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bumpalo-3.20.3/1-LICENSE-MIT",
+      "sha256": "65f94e99ddaf4f5d1782a6dae23f35d4293a9a01444a13135a6887017d353cee"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bumpalo-3.20.3/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bumpalo-3.20.3/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bytemuck-1.25.2/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bytemuck-1.25.2/1-LICENSE-MIT",
+      "sha256": "9df9ba60a11af705f2e451b53762686e615d86f76b169cf075c3237730dbd7e2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bytemuck-1.25.2/2-LICENSE-ZLIB",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bytemuck-1.25.2/2-LICENSE-ZLIB",
+      "sha256": "84b34dd7608f7fb9b17bd588a6bf392bf7de504e2716f024a77d89f1b145a151"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/bytemuck-1.25.2/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/bytemuck-1.25.2/LICENSE-APACHE",
+      "sha256": "e3ba223bb1423f0aad8c3dfce0fe3148db48926d41e6fbc3afbbf5ff9e1c89cb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cbc-0.1.2/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cbc-0.1.2/1-LICENSE-MIT",
+      "sha256": "63af4bea227c94d021e99427f6ca3a4b8efddadcca93ab6130f708cf6138cf68"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cbc-0.1.2/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cbc-0.1.2/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cfb-0.14.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cfb-0.14.0/LICENSE",
+      "sha256": "ebaac853b53fec0ed475796f533ce676912a4df9ad9d8a621fa76d5060591e10"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cfg-if-1.0.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cfg-if-1.0.4/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cfg-if-1.0.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cfg-if-1.0.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/chardetng-1.0.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/chardetng-1.0.0/1-LICENSE-MIT",
+      "sha256": "3fa4ca83dcc9237839b1bdeb2e6d16bdfb5ec0c5ce42b24694d8bbf0dcbef72c"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/chardetng-1.0.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/chardetng-1.0.0/LICENSE-APACHE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cipher-0.4.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cipher-0.4.4/1-LICENSE-MIT",
+      "sha256": "5c7bd92d1f096f12203dc1b601e3cb17484fa1b023e30b6b8edcc80e416237ec"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cipher-0.4.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cipher-0.4.4/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/const-oid-0.10.2/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/const-oid-0.10.2/1-LICENSE-MIT",
+      "sha256": "73b9dc2e79c7308998dd30296e073aefaefb944a68fb89aa412c23c0edcabcaa"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/const-oid-0.10.2/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/const-oid-0.10.2/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cpufeatures-0.2.17/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cpufeatures-0.2.17/1-LICENSE-MIT",
+      "sha256": "ae9baa7beea910273c2f384c2a6b721fb7bd02bda3436074a1072e4ee689f985"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cpufeatures-0.2.17/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cpufeatures-0.2.17/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cpufeatures-0.3.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cpufeatures-0.3.0/1-LICENSE-MIT",
+      "sha256": "ae9baa7beea910273c2f384c2a6b721fb7bd02bda3436074a1072e4ee689f985"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/cpufeatures-0.3.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/cpufeatures-0.3.0/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crc32fast-1.5.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crc32fast-1.5.0/1-LICENSE-MIT",
+      "sha256": "61d383b05b87d78f94d2937e2580cce47226d17823c0430fbcad09596537efcf"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crc32fast-1.5.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crc32fast-1.5.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crossbeam-deque-0.8.7/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crossbeam-deque-0.8.7/1-LICENSE-MIT",
+      "sha256": "5734ed989dfca1f625b40281ee9f4530f91b2411ec01cb748223e7eb87e201ab"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crossbeam-deque-0.8.7/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crossbeam-deque-0.8.7/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crossbeam-epoch-0.9.20/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crossbeam-epoch-0.9.20/1-LICENSE-MIT",
+      "sha256": "5734ed989dfca1f625b40281ee9f4530f91b2411ec01cb748223e7eb87e201ab"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crossbeam-epoch-0.9.20/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crossbeam-epoch-0.9.20/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crossbeam-utils-0.8.22/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crossbeam-utils-0.8.22/1-LICENSE-MIT",
+      "sha256": "5734ed989dfca1f625b40281ee9f4530f91b2411ec01cb748223e7eb87e201ab"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crossbeam-utils-0.8.22/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crossbeam-utils-0.8.22/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crypto-common-0.1.7/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crypto-common-0.1.7/1-LICENSE-MIT",
+      "sha256": "3521672491a3479422d5fe1aca6645dd2984090f85da6e5205abfb18fb7a6897"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crypto-common-0.1.7/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crypto-common-0.1.7/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crypto-common-0.2.2/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crypto-common-0.2.2/1-LICENSE-MIT",
+      "sha256": "d2e7ec5355c96eeade56b09187ceb48a6a30299da3ce7531a66d3d11405ab963"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/crypto-common-0.2.2/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/crypto-common-0.2.2/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/derivative-2.2.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/derivative-2.2.0/1-LICENSE-MIT",
+      "sha256": "e94997ba9934ce993406caf5d5002a99ac7b0692363cb801e777b961d1934b98"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/derivative-2.2.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/derivative-2.2.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/digest-0.10.7/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/digest-0.10.7/1-LICENSE-MIT",
+      "sha256": "9e0dfd2dd4173a530e238cb6adb37aa78c34c6bc7444e0e10c1ab5d8881f63ba"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/digest-0.10.7/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/digest-0.10.7/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/digest-0.11.3/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/digest-0.11.3/1-LICENSE-MIT",
+      "sha256": "af59cea35d7f5e2777a713b8d155d65efa2c339eb43f3c14e868c6ac8506edad"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/digest-0.11.3/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/digest-0.11.3/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/displaydoc-0.2.7/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/displaydoc-0.2.7/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/displaydoc-0.2.7/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/displaydoc-0.2.7/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/ecb-0.1.2/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/ecb-0.1.2/LICENSE",
+      "sha256": "305f0f8f4db8470887a8819b2dd0779371b960de48067f4a4ace0bb311ba71da"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/ego-tree-0.11.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/ego-tree-0.11.0/LICENSE",
+      "sha256": "ddea4e94a1c35ed9826e54e13a5b50b8f81b21665a00ca07c8861f1859e56b6b"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/either-1.17.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/either-1.17.0/1-LICENSE-MIT",
+      "sha256": "7576269ea71f767b99297934c0b2367532690f8c4badc695edf8e04ab6a1e545"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/either-1.17.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/either-1.17.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/encoding_rs-0.8.35/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/encoding_rs-0.8.35/1-LICENSE-MIT",
+      "sha256": "3fa4ca83dcc9237839b1bdeb2e6d16bdfb5ec0c5ce42b24694d8bbf0dcbef72c"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/encoding_rs-0.8.35/2-LICENSE-WHATWG",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/encoding_rs-0.8.35/2-LICENSE-WHATWG",
+      "sha256": "838118388fe5c2e7f1dbbaeed13e1c7f3ebf88be91319c7c1d77c18e987d1a50"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/encoding_rs-0.8.35/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/encoding_rs-0.8.35/LICENSE-APACHE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/equivalent-1.0.2/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/equivalent-1.0.2/1-LICENSE-MIT",
+      "sha256": "7365cc8878a1d7ce155a58c4ca09c3d7a6be413efa5334a80ea842912b669349"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/equivalent-1.0.2/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/equivalent-1.0.2/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/fastrand-2.5.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/fastrand-2.5.0/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/fastrand-2.5.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/fastrand-2.5.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/flate2-1.1.9/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/flate2-1.1.9/1-LICENSE-MIT",
+      "sha256": "025436edff4cfcdde17a5811fdea78892d8482efd1abdec5a17872d07a4f2112"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/flate2-1.1.9/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/flate2-1.1.9/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/fnv-1.0.7/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/fnv-1.0.7/1-LICENSE-MIT",
+      "sha256": "65fdb6c76cd61612070c066eec9ecdb30ee74fb27859d0d9af58b9f499fd0c3e"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/fnv-1.0.7/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/fnv-1.0.7/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/funty-2.0.0/LICENSE.txt",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/funty-2.0.0/LICENSE.txt",
+      "sha256": "f790cc576999f5998c766d3d26d7d64dc368e805a98461484f65e8d961ec6d9f"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-core-0.3.34/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-core-0.3.34/1-LICENSE-MIT",
+      "sha256": "6652c868f35dfe5e8ef636810a4e576b9d663f3a17fb0f5613ad73583e1b88fd"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-core-0.3.34/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-core-0.3.34/LICENSE-APACHE",
+      "sha256": "275c491d6d1160553c32fd6127061d7f9606c3ea25abfad6ca3f6ed088785427"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-macro-0.3.34/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-macro-0.3.34/1-LICENSE-MIT",
+      "sha256": "6652c868f35dfe5e8ef636810a4e576b9d663f3a17fb0f5613ad73583e1b88fd"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-macro-0.3.34/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-macro-0.3.34/LICENSE-APACHE",
+      "sha256": "275c491d6d1160553c32fd6127061d7f9606c3ea25abfad6ca3f6ed088785427"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-task-0.3.34/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-task-0.3.34/1-LICENSE-MIT",
+      "sha256": "6652c868f35dfe5e8ef636810a4e576b9d663f3a17fb0f5613ad73583e1b88fd"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-task-0.3.34/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-task-0.3.34/LICENSE-APACHE",
+      "sha256": "275c491d6d1160553c32fd6127061d7f9606c3ea25abfad6ca3f6ed088785427"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-timer-3.0.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-timer-3.0.4/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-timer-3.0.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-timer-3.0.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-util-0.3.34/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-util-0.3.34/1-LICENSE-MIT",
+      "sha256": "6652c868f35dfe5e8ef636810a4e576b9d663f3a17fb0f5613ad73583e1b88fd"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/futures-util-0.3.34/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/futures-util-0.3.34/LICENSE-APACHE",
+      "sha256": "275c491d6d1160553c32fd6127061d7f9606c3ea25abfad6ca3f6ed088785427"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/generic-array-0.14.7/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/generic-array-0.14.7/LICENSE",
+      "sha256": "c09aae9d3c77b531f56351a9947bc7446511d6b025b3255312d3e3442a9a7583"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/glob-0.3.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/glob-0.3.4/1-LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/glob-0.3.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/glob-0.3.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/hashbrown-0.17.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/hashbrown-0.17.1/1-LICENSE-MIT",
+      "sha256": "ff8f68cb076caf8cefe7a6430d4ac086ce6af2ca8ce2c4e5a2004d4552ef52a2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/hashbrown-0.17.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/hashbrown-0.17.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/html5ever-0.39.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/html5ever-0.39.0/1-LICENSE-MIT",
+      "sha256": "86dd7f026f916daf7511e39951ad8ea8cf55a8db67ae64060dacf829761c18f3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/html5ever-0.39.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/html5ever-0.39.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/hybrid-array-0.4.14/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/hybrid-array-0.4.14/1-LICENSE-MIT",
+      "sha256": "70c9d40f1f9545c3f133b8a67206e89da850f6468eed072281bb3701514114a9"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/hybrid-array-0.4.14/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/hybrid-array-0.4.14/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/icu_collections-2.3.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/icu_collections-2.3.0/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/icu_locale_core-2.3.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/icu_locale_core-2.3.0/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/icu_properties-2.3.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/icu_properties-2.3.0/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/icu_properties_data-2.3.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/icu_properties_data-2.3.0/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/icu_provider-2.3.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/icu_provider-2.3.0/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/indexmap-2.14.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/indexmap-2.14.0/1-LICENSE-MIT",
+      "sha256": "ecc269ef87fd38a1d98e30bfac9ba964a9dbd9315c3770fed98d4d7cb5882055"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/indexmap-2.14.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/indexmap-2.14.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/inout-0.1.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/inout-0.1.4/1-LICENSE-MIT",
+      "sha256": "304b898acad7f02e03d6d8832d682a3b43ee729ab5d3a069af5a36979083b6b4"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/inout-0.1.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/inout-0.1.4/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/itoa-1.0.18/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/itoa-1.0.18/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/itoa-1.0.18/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/itoa-1.0.18/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/js-sys-0.3.104/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/js-sys-0.3.104/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/js-sys-0.3.104/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/js-sys-0.3.104/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/libc-0.2.189/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/libc-0.2.189/1-LICENSE-MIT",
+      "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/libc-0.2.189/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/libc-0.2.189/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/libchm-0.2.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/libchm-0.2.0/LICENSE",
+      "sha256": "8cc688a564de64ecc6e669890f68d66f8373c506c834c5e13cd5ac9e9a618c4b"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/litemap-0.8.3/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/litemap-0.8.3/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/lock_api-0.4.14/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/lock_api-0.4.14/1-LICENSE-MIT",
+      "sha256": "c9a75f18b9ab2927829a208fc6aa2cf4e63b8420887ba29cdb265d6619ae82d5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/lock_api-0.4.14/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/lock_api-0.4.14/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/log-0.4.33/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/log-0.4.33/1-LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/log-0.4.33/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/log-0.4.33/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/markup5ever-0.39.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/markup5ever-0.39.0/1-LICENSE-MIT",
+      "sha256": "86dd7f026f916daf7511e39951ad8ea8cf55a8db67ae64060dacf829761c18f3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/markup5ever-0.39.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/markup5ever-0.39.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/md-5-0.10.6/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/md-5-0.10.6/1-LICENSE-MIT",
+      "sha256": "b4eb00df6e2a4d22518fcaa6a2b4646f249b3a3c9814509b22bd2091f1392ff1"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/md-5-0.10.6/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/md-5-0.10.6/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/memchr-2.8.3/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/memchr-2.8.3/1-LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/memchr-2.8.3/COPYING",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/memchr-2.8.3/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/1-LICENSE-APACHE.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/1-LICENSE-APACHE.md",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/2-LICENSE-MIT.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/2-LICENSE-MIT.md",
+      "sha256": "799e9ca9d179295ef372f25d3769cdda7d25bb2668add6a6a1e22d1e4c678b8d"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/3-LICENSE-ZLIB.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/3-LICENSE-ZLIB.md",
+      "sha256": "0a54e647fe54104658b5e563c04c6f9edf251710e47bce692e0bd990a4ddaa39"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/miniz_oxide-0.8.9/LICENSE",
+      "sha256": "4108245a1f2df9d4e94df8abed5b4ba0759bb2f9b40a6b939f1be141077ae50b"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/new_debug_unreachable-1.0.6/LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/new_debug_unreachable-1.0.6/LICENSE-MIT",
+      "sha256": "f7715d38a3fa1b4ac97c5729740752505a39cb92ee83ab5b102aeb5eaa7cdea4"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/office-crypto-0.3.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/office-crypto-0.3.0/LICENSE",
+      "sha256": "8754f7d813056caae5d1823aa3d17a292d7a4fc4e6b1a011857cbd37567e2a93"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/once_cell-1.21.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/once_cell-1.21.4/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/once_cell-1.21.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/once_cell-1.21.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/paperback-core-0.1.0/PAPERBACK-LICENSE.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/paperback-core-0.1.0/PAPERBACK-LICENSE.md",
+      "sha256": "2512bc391de0e906000f442d835da92f8037b9d828afbcbf079affb0ad612577"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/paperback-formats-0.1.0/PAPERBACK-LICENSE.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/paperback-formats-0.1.0/PAPERBACK-LICENSE.md",
+      "sha256": "2512bc391de0e906000f442d835da92f8037b9d828afbcbf079affb0ad612577"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/parking_lot-0.12.5/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/parking_lot-0.12.5/1-LICENSE-MIT",
+      "sha256": "c9a75f18b9ab2927829a208fc6aa2cf4e63b8420887ba29cdb265d6619ae82d5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/parking_lot-0.12.5/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/parking_lot-0.12.5/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/parking_lot_core-0.9.12/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/parking_lot_core-0.9.12/1-LICENSE-MIT",
+      "sha256": "c9a75f18b9ab2927829a208fc6aa2cf4e63b8420887ba29cdb265d6619ae82d5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/parking_lot_core-0.9.12/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/parking_lot_core-0.9.12/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/percent-encoding-2.3.2/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/percent-encoding-2.3.2/1-LICENSE-MIT",
+      "sha256": "b38f11f6096706e6de553dabe2a7ed142d59b6fa8c97e290c67496154745cdd5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/percent-encoding-2.3.2/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/percent-encoding-2.3.2/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/phf-0.13.1/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/phf-0.13.1/LICENSE",
+      "sha256": "0ab4d106b6faac07fb6a051815fd1b4d862d730895e2d7d7358c2f13565e7a38"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/phf_codegen-0.13.1/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/phf_codegen-0.13.1/LICENSE",
+      "sha256": "0ab4d106b6faac07fb6a051815fd1b4d862d730895e2d7d7358c2f13565e7a38"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/phf_generator-0.13.1/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/phf_generator-0.13.1/LICENSE",
+      "sha256": "0ab4d106b6faac07fb6a051815fd1b4d862d730895e2d7d7358c2f13565e7a38"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/phf_shared-0.13.1/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/phf_shared-0.13.1/LICENSE",
+      "sha256": "0ab4d106b6faac07fb6a051815fd1b4d862d730895e2d7d7358c2f13565e7a38"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/pin-project-lite-0.2.17/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/pin-project-lite-0.2.17/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/pin-project-lite-0.2.17/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/pin-project-lite-0.2.17/LICENSE-APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/potential_utf-0.1.6/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/potential_utf-0.1.6/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/precomputed-hash-0.1.1/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/precomputed-hash-0.1.1/LICENSE",
+      "sha256": "7ca6700600dfa9c9497bf5556365067daa802c871ea78239f129309c7a2048f7"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/proc-macro-crate-3.5.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/proc-macro-crate-3.5.0/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/proc-macro-crate-3.5.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/proc-macro-crate-3.5.0/LICENSE-APACHE",
+      "sha256": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/proc-macro2-1.0.107/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/proc-macro2-1.0.107/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/proc-macro2-1.0.107/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/proc-macro2-1.0.107/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/pulldown-cmark-0.13.4/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/pulldown-cmark-0.13.4/LICENSE",
+      "sha256": "c4f10f55904bdb9f27d3fbf94c354926d6cfe8b982276e556238c258941b243b"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/pulldown-cmark-escape-0.11.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/pulldown-cmark-escape-0.11.0/LICENSE",
+      "sha256": "c4f10f55904bdb9f27d3fbf94c354926d6cfe8b982276e556238c258941b243b"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/quick-xml-0.38.4/LICENSE-MIT.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/quick-xml-0.38.4/LICENSE-MIT.md",
+      "sha256": "5b2c207dcf571267ebe0bbdd5bf321f561ddc22ff597e7b363e96f4539507a29"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/quote-1.0.47/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/quote-1.0.47/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/quote-1.0.47/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/quote-1.0.47/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/radium-0.7.0/LICENSE.txt",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/radium-0.7.0/LICENSE.txt",
+      "sha256": "13f4cc9fbc8d4a447b28aa84019c10ad4abf4b5f6919db061bf6690ccc23bc02"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rayon-1.12.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rayon-1.12.0/1-LICENSE-MIT",
+      "sha256": "0621878e61f0d0fda054bcbe02df75192c28bde1ecc8289cbd86aeba2dd72720"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rayon-1.12.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rayon-1.12.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rayon-core-1.13.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rayon-core-1.13.0/1-LICENSE-MIT",
+      "sha256": "0621878e61f0d0fda054bcbe02df75192c28bde1ecc8289cbd86aeba2dd72720"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rayon-core-1.13.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rayon-core-1.13.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rc4-0.1.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rc4-0.1.0/1-LICENSE-MIT",
+      "sha256": "52232c2cee3bb7d8cabe47ef367f1bf8bb607c22bdfca0219d6156cb7f446e9d"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rc4-0.1.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rc4-0.1.0/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/redox_syscall-0.5.18/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/redox_syscall-0.5.18/LICENSE",
+      "sha256": "efcfee7981ff72431fffb06925cad00a23dce079ed4354f61030ad5abdb78829"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/regex-1.13.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/regex-1.13.1/1-LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/regex-1.13.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/regex-1.13.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/regex-automata-0.4.18/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/regex-automata-0.4.18/1-LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/regex-automata-0.4.18/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/regex-automata-0.4.18/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/regex-syntax-0.8.11/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/regex-syntax-0.8.11/1-LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/regex-syntax-0.8.11/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/regex-syntax-0.8.11/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/roman-0.2.1/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/roman-0.2.1/LICENSE",
+      "sha256": "df8a52b8f2d53577869710a13cf4cc8beb38df8d2863d252eb389cbe1b09c868"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/roxmltree-0.21.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/roxmltree-0.21.1/1-LICENSE-MIT",
+      "sha256": "fffe218c1e349e1d482a05677f2ce850502f88298174d77f6ac7c04821db7899"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/roxmltree-0.21.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/roxmltree-0.21.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rstest-0.26.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rstest-0.26.1/1-LICENSE-MIT",
+      "sha256": "53b5c498df966daf4ea75d92c047e4d92bc02cffa4315751109596d32a524c87"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rstest-0.26.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rstest-0.26.1/LICENSE-APACHE",
+      "sha256": "58bd62e8a40f94eb780e1ad32d8ad33a7baed34f78b833e61ebabb7b489d90f4"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rstest_macros-0.26.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rstest_macros-0.26.1/1-LICENSE-MIT",
+      "sha256": "53b5c498df966daf4ea75d92c047e4d92bc02cffa4315751109596d32a524c87"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rstest_macros-0.26.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rstest_macros-0.26.1/LICENSE-APACHE",
+      "sha256": "58bd62e8a40f94eb780e1ad32d8ad33a7baed34f78b833e61ebabb7b489d90f4"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rtf-parser-0.4.3/LICENSE.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rtf-parser-0.4.3/LICENSE.md",
+      "sha256": "e8f880affb8c7bfed3218541288ade927e0fbc463f51402f4113c07b94b2abdd"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rustc_version-0.4.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rustc_version-0.4.1/1-LICENSE-MIT",
+      "sha256": "c9a75f18b9ab2927829a208fc6aa2cf4e63b8420887ba29cdb265d6619ae82d5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rustc_version-0.4.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rustc_version-0.4.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rustversion-1.0.23/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rustversion-1.0.23/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/rustversion-1.0.23/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/rustversion-1.0.23/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/scopeguard-1.2.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/scopeguard-1.2.0/1-LICENSE-MIT",
+      "sha256": "fb77f0a9c53e473abe5103c8632ef9f0f2874d4fb3f17cb2d8c661aab9cee9d7"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/scopeguard-1.2.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/scopeguard-1.2.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/scraper-0.27.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/scraper-0.27.0/LICENSE",
+      "sha256": "2d91c8dc5e287043b012300913db06d2e8f781daeaab9598d4452db6bff1ea00"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/semver-1.0.28/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/semver-1.0.28/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/semver-1.0.28/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/semver-1.0.28/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde-1.0.229/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde-1.0.229/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde-1.0.229/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_core-1.0.229/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_core-1.0.229/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_core-1.0.229/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_core-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_derive-1.0.229/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_derive-1.0.229/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_derive-1.0.229/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_derive-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_derive_internals-0.28.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_derive_internals-0.28.0/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_derive_internals-0.28.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_derive_internals-0.28.0/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_json-1.0.151/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_json-1.0.151/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_json-1.0.151/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_json-1.0.151/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_spanned-1.1.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_spanned-1.1.1/1-LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/serde_spanned-1.1.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/serde_spanned-1.1.1/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/sha1-0.10.7/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/sha1-0.10.7/1-LICENSE-MIT",
+      "sha256": "b4eb00df6e2a4d22518fcaa6a2b4646f249b3a3c9814509b22bd2091f1392ff1"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/sha1-0.10.7/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/sha1-0.10.7/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/sha1-0.11.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/sha1-0.11.0/1-LICENSE-MIT",
+      "sha256": "831e0f43ad0bf014c1c4fec5767aae470434c1d66d6e671be2d823e729063e25"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/sha1-0.11.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/sha1-0.11.0/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/sha2-0.10.9/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/sha2-0.10.9/1-LICENSE-MIT",
+      "sha256": "b4eb00df6e2a4d22518fcaa6a2b4646f249b3a3c9814509b22bd2091f1392ff1"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/sha2-0.10.9/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/sha2-0.10.9/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/simd-adler32-0.3.10/LICENSE.md",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/simd-adler32-0.3.10/LICENSE.md",
+      "sha256": "42a35170233e83e18856792e748de4c1ce4a63b2afce9a370c89ef3fe23f9f2d"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/siphasher-1.0.3/COPYING",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/siphasher-1.0.3/COPYING",
+      "sha256": "c962ee4d1d05ddc138b202b2540219ebc57893fcf97b364852094a9a94ce1365"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/slab-0.4.12/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/slab-0.4.12/LICENSE",
+      "sha256": "8ce0830173fdac609dfb4ea603fdc002c2f4af0dc9b1a005653f5da9cf534b18"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/smallvec-1.15.2/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/smallvec-1.15.2/1-LICENSE-MIT",
+      "sha256": "0b28172679e0009b655da42797c03fd163a3379d5cfa67ba1f1655e974a2a1a9"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/smallvec-1.15.2/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/smallvec-1.15.2/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/stable_deref_trait-1.2.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/stable_deref_trait-1.2.1/1-LICENSE-MIT",
+      "sha256": "5e05b024f653a5ce199e77cbbbd42fb5553562ec714b819421ed0c3e552a75d7"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/stable_deref_trait-1.2.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/stable_deref_trait-1.2.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/string_cache-0.9.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/string_cache-0.9.0/1-LICENSE-MIT",
+      "sha256": "62065228e42caebca7e7d7db1204cbb867033de5982ca4009928915e4095f3a3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/string_cache-0.9.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/string_cache-0.9.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/string_cache_codegen-0.6.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/string_cache_codegen-0.6.1/1-LICENSE-MIT",
+      "sha256": "62065228e42caebca7e7d7db1204cbb867033de5982ca4009928915e4095f3a3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/string_cache_codegen-0.6.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/string_cache_codegen-0.6.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/syn-1.0.109/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/syn-1.0.109/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/syn-1.0.109/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/syn-1.0.109/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/syn-2.0.119/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/syn-2.0.119/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/syn-2.0.119/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/syn-2.0.119/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/syn-3.0.3/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/syn-3.0.3/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/syn-3.0.3/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/syn-3.0.3/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/synstructure-0.13.2/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/synstructure-0.13.2/LICENSE",
+      "sha256": "219920e865eee70b7dcfc948a86b099e7f4fe2de01bcca2ca9a20c0a033f2b59"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tap-1.0.1/LICENSE.txt",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tap-1.0.1/LICENSE.txt",
+      "sha256": "8b4e95f5cf0dc40269c99f7b787203ffe04ded245ca2427422c196efa2b2f42a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tendril-0.5.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tendril-0.5.1/1-LICENSE-MIT",
+      "sha256": "60a7062291b01ba068f300612cdbdc20382ac1d4934f07bcdd7167c15299f309"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tendril-0.5.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tendril-0.5.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/thiserror-2.0.20/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/thiserror-2.0.20/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/thiserror-2.0.20/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/thiserror-2.0.20/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/thiserror-impl-2.0.20/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/thiserror-impl-2.0.20/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/thiserror-impl-2.0.20/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/thiserror-impl-2.0.20/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tinystr-0.8.4/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tinystr-0.8.4/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml-1.1.4_spec-1.1.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml-1.1.4_spec-1.1.0/1-LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml-1.1.4_spec-1.1.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml-1.1.4_spec-1.1.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_datetime-1.1.1_spec-1.1.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_datetime-1.1.1_spec-1.1.0/1-LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_datetime-1.1.1_spec-1.1.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_datetime-1.1.1_spec-1.1.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_edit-0.25.13_spec-1.1.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_edit-0.25.13_spec-1.1.0/1-LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_edit-0.25.13_spec-1.1.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_edit-0.25.13_spec-1.1.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_parser-1.1.3_spec-1.1.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_parser-1.1.3_spec-1.1.0/1-LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_parser-1.1.3_spec-1.1.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_parser-1.1.3_spec-1.1.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_writer-1.1.2_spec-1.1.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_writer-1.1.2_spec-1.1.0/1-LICENSE-MIT",
+      "sha256": "6efb0476a1cc085077ed49357026d8c173bf33017278ef440f222fb9cbcb66e6"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/toml_writer-1.1.2_spec-1.1.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/toml_writer-1.1.2_spec-1.1.0/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tracing-0.1.44/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tracing-0.1.44/LICENSE",
+      "sha256": "898b1ae9821e98daf8964c8d6c7f61641f5f5aa78ad500020771c0939ee0dea1"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tracing-attributes-0.1.31/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tracing-attributes-0.1.31/LICENSE",
+      "sha256": "898b1ae9821e98daf8964c8d6c7f61641f5f5aa78ad500020771c0939ee0dea1"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tracing-core-0.1.36/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tracing-core-0.1.36/LICENSE",
+      "sha256": "898b1ae9821e98daf8964c8d6c7f61641f5f5aa78ad500020771c0939ee0dea1"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tsify-0.4.5/1-LICENSE_MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tsify-0.4.5/1-LICENSE_MIT",
+      "sha256": "23b988ff99c59aba4e37e7709d3d2102096203bb83a077cbc1aad04dd7a77244"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/tsify-0.4.5/LICENSE_APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/tsify-0.4.5/LICENSE_APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/typed-path-0.12.3/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/typed-path-0.12.3/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/typed-path-0.12.3/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/typed-path-0.12.3/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/typenum-1.20.1/1-LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/typenum-1.20.1/1-LICENSE-APACHE",
+      "sha256": "516b24e051bf5630880ebbd55c40a25ce9552ebaf8970a53e8976eb70e522406"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/typenum-1.20.1/2-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/typenum-1.20.1/2-LICENSE-MIT",
+      "sha256": "a825bd853ab71619a4923d7b4311221427848070ff44d990da39b0b274c1683f"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/typenum-1.20.1/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/typenum-1.20.1/LICENSE",
+      "sha256": "db11fec9946737df39ca3898d9cd8c10ec6f6c3a884a6802b0ad0b81b4e8f23a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/unicase-2.9.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/unicase-2.9.0/1-LICENSE-MIT",
+      "sha256": "4f6bd11a0f17fe5b085ace1daaedb7b002a08316850dd9577c246c6a68a68e8c"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/unicase-2.9.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/unicase-2.9.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/unicode-bidi-0.3.18/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/unicode-bidi-0.3.18/1-LICENSE-MIT",
+      "sha256": "7b63ecd5f1902af1b63729947373683c32745c16a10e8e6292e2e2dcd7e90ae0"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/unicode-bidi-0.3.18/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/unicode-bidi-0.3.18/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/unicode-ident-1.0.24/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/unicode-ident-1.0.24/1-LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/unicode-ident-1.0.24/2-LICENSE-UNICODE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/unicode-ident-1.0.24/2-LICENSE-UNICODE",
+      "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/unicode-ident-1.0.24/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/unicode-ident-1.0.24/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/utf8_iter-1.0.4/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/utf8_iter-1.0.4/1-LICENSE-MIT",
+      "sha256": "3fa4ca83dcc9237839b1bdeb2e6d16bdfb5ec0c5ce42b24694d8bbf0dcbef72c"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/utf8_iter-1.0.4/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/utf8_iter-1.0.4/LICENSE-APACHE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/uuid-1.24.1/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/uuid-1.24.1/1-LICENSE-MIT",
+      "sha256": "436bc5a105d8e57dcd8778730f3754f7bf39c14d2f530e4cde4bd2d17a83ec3d"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/uuid-1.24.1/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/uuid-1.24.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/version_check-0.9.5/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/version_check-0.9.5/1-LICENSE-MIT",
+      "sha256": "b7e650f3fce5c53249d1cdc608b54df156a97edd636cf9d23498d0cfe7aec63e"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/version_check-0.9.5/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/version_check-0.9.5/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-0.2.127/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-0.2.127/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-0.2.127/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-0.2.127/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-macro-0.2.127/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-macro-0.2.127/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-macro-0.2.127/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-macro-0.2.127/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-macro-support-0.2.127/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-macro-support-0.2.127/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-macro-support-0.2.127/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-macro-support-0.2.127/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-shared-0.2.127/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-shared-0.2.127/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wasm-bindgen-shared-0.2.127/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wasm-bindgen-shared-0.2.127/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/web-sys-0.3.104/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/web-sys-0.3.104/1-LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/web-sys-0.3.104/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/web-sys-0.3.104/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/web-time-1.1.0/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/web-time-1.1.0/1-LICENSE-MIT",
+      "sha256": "f428305bbf2e70fbd807af0f3c7ac1b7acfb95311640f451e9d2e48db6d7e96b"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/web-time-1.1.0/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/web-time-1.1.0/LICENSE-APACHE",
+      "sha256": "54a744942eb3fa63a74d8d359989ed6962c04f3f10ff20cfa08ff8aa7efbe4e6"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/web_atoms-0.2.6/1-LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/web_atoms-0.2.6/1-LICENSE-MIT",
+      "sha256": "86dd7f026f916daf7511e39951ad8ea8cf55a8db67ae64060dacf829761c18f3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/web_atoms-0.2.6/LICENSE-APACHE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/web_atoms-0.2.6/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/windows-link-0.2.1/1-license-mit",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/windows-link-0.2.1/1-license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/windows-link-0.2.1/license-apache-2.0",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/windows-link-0.2.1/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/winnow-1.0.4/LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/winnow-1.0.4/LICENSE-MIT",
+      "sha256": "cb5aedb296c5246d1f22e9099f925a65146f9f0d6b4eebba97fd27a6cdbbab2d"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/writeable-0.6.4/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/writeable-0.6.4/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/wyz-0.5.1/LICENSE.txt",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/wyz-0.5.1/LICENSE.txt",
+      "sha256": "411781fd38700f2357a14126d0ab048164ab881f1dcb335c1bb932e232c9a2f5"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/yoke-0.8.3/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/yoke-0.8.3/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/yoke-derive-0.8.2/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/yoke-derive-0.8.2/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zerofrom-0.1.8/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zerofrom-0.1.8/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zerofrom-derive-0.1.7/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zerofrom-derive-0.1.7/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zerotrie-0.2.5/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zerotrie-0.2.5/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zerovec-0.11.7/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zerovec-0.11.7/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zerovec-derive-0.11.5/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zerovec-derive-0.11.5/LICENSE",
+      "sha256": "f367c1b8e1aa262435251e442901da4607b4650e0e63a026f5044473ecfb90f2"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zip-8.6.0/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zip-8.6.0/LICENSE",
+      "sha256": "58545fed1565e42d687aecec6897d35c6d37ccb71479a137c0deb2203e125c79"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zlib-rs-0.6.7/LICENSE",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zlib-rs-0.6.7/LICENSE",
+      "sha256": "e72111c52b7d96ebe25348dee19f0744f444d3c95ae6b1ecb6ccaecc5bce05ba"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zmij-1.0.23/LICENSE-MIT",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zmij-1.0.23/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "source": "scripts/release/native-notices/dependencies/zopfli-0.8.3/COPYING",
+      "copy": "licenses/collected/scripts/release/native-notices/dependencies/zopfli-0.8.3/COPYING",
+      "sha256": "018b1cb87efdf7a04c2fcc13d57ed63f62149113fb207b27ea13430d64f13513"
+    }
+  ]
+}
